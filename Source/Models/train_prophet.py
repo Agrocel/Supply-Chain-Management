@@ -61,7 +61,7 @@ def train_prophet():
         daily_seasonality='auto',
         interval_width=0.80,            # Width of uncertainty interval
         uncertainty_samples=1000        # For prediction intervals
-    )                                      
+        )                                     
         model.fit(train)
         logger.info("Model Training Complete")
     except Exception as e:
