@@ -1,3 +1,4 @@
 # This will not upload the Data File to the repository
 /Data/*
 !Data/README.md
+.venv/

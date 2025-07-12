@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as np
-import os
 import matplotlib.pyplot as plt
+import os
 import seaborn as sns
 
 # This module contains utility functions for the Project.
