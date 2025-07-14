@@ -1,0 +1,5 @@
+{
+    "state_district" : "Data\\Raw\\external\\dealer_active_inactive_report.xlsx",
+    "raw_data_path_24" : "Data\\Raw\\Sales\\Sales-20-24.csv",
+    "raw_data_path_25" : "Data\\Raw\\Sales\\Sales-25(Jan-Apr).xlsx"
+}
