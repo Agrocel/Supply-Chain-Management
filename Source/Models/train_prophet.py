@@ -51,7 +51,7 @@ def train_prophet():
         logger.info("Fitting Data to the Model......")
         model = Prophet(
         growth='linear',                 # 'linear' or 'logistic'
-        changepoint_range=0.5         # % of data to check for changepoints
+        changepoint_range=0.5,        # % of data to check for changepoints
         changepoint_prior_scale=0.05,   # Flexibility of trend changes
         seasonality_mode='additive',    # 'additive' or 'multiplicative'
         seasonality_prior_scale=10.0,

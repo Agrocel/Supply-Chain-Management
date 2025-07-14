@@ -2,3 +2,6 @@
 /Data/*
 !Data/README.md
 .venv/
+__pycache__
+Logging/__pycache__
+Source/__pycache__
