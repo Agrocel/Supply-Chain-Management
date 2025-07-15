@@ -7,4 +7,4 @@ scipy
 requests
 scikit-image
 prophet
-
+plotly

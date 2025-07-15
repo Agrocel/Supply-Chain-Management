@@ -10,12 +10,15 @@ from Source.Utils.helpers import load_data
 from Logging.logger import get_logger
 import json
 
+
 # information from the Config file
 with open('config.json',"r") as f:
     config = json.load(f)
 
+
 # Addes New Log file for Scm-data-Clean 
 logger = get_logger("SCM-Data-Clean")
+
 
 # Data Required for the File to map 
 state_district_df = load_data(config[r'state_district'])
@@ -58,20 +61,20 @@ def Clean(data):
     """
 
 
-    logger.info("Checking if columns are same as required......")
-    required_columns = [
-        'Billing Date', 'Sold-To-Party Name', 'Basic Value', 'Invoice Value',
-        'Taxable Value', 'Agent Name', 'Plant Code', 'Mat. Code',
-        'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.']
+    # logger.info("Checking if columns are same as required......")
+    # required_columns = [
+    #     'Billing Date', 'Sold-To-Party Name', 'Basic Value', 'Invoice Value',
+    #     'Taxable Value', 'Agent Name', 'Plant Code', 'Mat. Code',
+    #     'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.']
 
-    missing = [col for col in required_columns if col not in data.columns]
+    # missing = [col for col in required_columns if col not in data.columns]
 
-    if missing:
-        logger.warning(f"Missing columns in the dataset: {missing}")
-        raise ValueError(f'Missing required columns :{missing}')
-    else:
-        data = data[required_columns]
-    logger.info("Columns are already Present in the Data.\n")
+    # if missing:
+    #     logger.warning(f"Missing columns in the dataset: {missing}")
+    #     raise ValueError(f'Missing required columns :{missing}')
+    # else:
+    #     data = data[required_columns]
+    # logger.info("Columns are already Present in the Data.\n")
 
 
     # Map Product and Clean Mat. Desc. Column
@@ -190,7 +193,7 @@ def Clean(data):
         logger.error(f"Error occured while Creating State column:{e}")
 
 
-    # This bock of code Creates New Columns, filter data(mahalaabh).
+    # Creates New Columns, filter data(mahalaabh).
     Deaslership_to_district = state_district_df.set_index('Dealership Name')['District'].to_dict()
     data['District'] = data['Sold-To-Party Name'].map(Deaslership_to_district)
     logger.info(f"Number of rows where district is not found:{data['District'].isna().sum()}")
@@ -222,8 +225,20 @@ def Clean(data):
     data_MH = data_mahalaabh[data_mahalaabh['State'] == 'Maharashtra']
     data_CG = data_mahalaabh[data_mahalaabh['State'] == 'Chhattisgarh']
     data_TN = data_mahalaabh[data_mahalaabh['State'] == 'Tamil Nadu']
-    logger.info("Sucessfully Created MH,TN,CG,GJ")
+    logger.info("Sucessfully Created MH,TN,CG,GJ varaible")
     logger.info("---- Step Completed ----\n")
 
-    return data_GJ,data_CG,data_MH,data_TN,data_mahalaabh,data
 
+    try:
+        logger.info("Creating CSV for data.......")
+        data_GJ.to_csv(config[r"data_GJ.csv"], index=False)
+        data_MH.to_csv(config[r"data_MH.csv"], index=False)
+        data_CG.to_csv(config[r"data_CG.csv"], index=False)
+        data_TN.to_csv(config[r"data_TN.csv"], index=False)
+        logger.info('Successfully created CSV files.\n')
+
+    except Exception as e:
+        logger.error(f"Error occurred while writing CSV files: {e}")
+
+
+    return data_GJ, data_CG, data_MH, data_TN, data_mahalaabh,data
