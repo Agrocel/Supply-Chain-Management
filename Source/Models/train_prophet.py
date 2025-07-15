@@ -1,3 +1,7 @@
+#1. save the Model
+
+
+
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,23 +19,21 @@ from Logging.logger import get_logger
 # Adding logger
 logger = get_logger("Prophet-Model-Training")
 
+
 # Load Dataset
 logger.info('Loading DataSet')
-try:
-    data = load_data() # Assuming load_data needs a file path argument
-    logger.info(f'Dataset loaded with {len(data)} rows')
-except FileNotFoundError as e:
-    logger.error(f"Error loading data: {e}", exc_info=True)
-    exit()
-def train_prophet():
+
+
+
+def train_model_prophet(data) -> Prophet:
+
     # Prepare the data for Prophet
     logger.info("Preparing Data for Prophet")
-    prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'})    #  change Name  according to the model
-
+    prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'}).copy()  
 
 
     # Train test data seperation for model
-    test_size = 5
+    test_size = 3
     try:   
         if len(prophet_data) < test_size + 2:
             raise ValueError(
@@ -43,11 +45,12 @@ def train_prophet():
 
         logger.info(f'Train-test split completed, Training on {len(train)} rows and testing on {len(test)} rows')
     except (ValueError, IndexError) as e:
-        logger.error("An error occured during train test spilt:{e}",exc_info=True)
+        logger.error(f"An error occured during train test spilt:{e}",exc_info=True)
         exit()
 
+
+    # Prophet Model 
     try:
-        # Fit Data to the Model
         logger.info("Fitting Data to the Model......")
         model = Prophet(
         growth='linear',                 # 'linear' or 'logistic'
@@ -61,7 +64,8 @@ def train_prophet():
         daily_seasonality='auto',
         interval_width=0.80,            # Width of uncertainty interval
         uncertainty_samples=1000        # For prediction intervals
-        )                                     
+        )            
+
         model.fit(train)
         logger.info("Model Training Complete")
     except Exception as e:
@@ -72,7 +76,7 @@ def train_prophet():
     try:
         # Model Evalution
         future = model.make_future_dataframe(periods=3, freq='M')
-        forecast = model.predict(future)
+        forecast_future = model.predict(future)
         forecast_train = model.predict(train['ds'])
         logger.info("Model Evaluation Complete")
     except Exception as e:
@@ -81,7 +85,7 @@ def train_prophet():
 
     try:
         MAE_train = mean_absolute_error(train['y'], forecast_train['yhat'])
-        MAE = mean_absolute_error(train['y'], forecast['yhat'])
+        MAE = mean_absolute_error(train['y'], forecast_future['yhat'])
         logger.info(f"Train data MAE is {MAE_train}")
         logger.info(f"Forecast MAE is: {MAE}")
     except Exception as e:
