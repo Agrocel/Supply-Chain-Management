@@ -1,7 +1,3 @@
-#1. save the Model
-
-
-
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,84 +5,121 @@ import seaborn as sns
 from datetime import datetime
 import os 
 import re
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from prophet import Prophet
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from Source.Utils.helpers import load_data
 from Logging.logger import get_logger
+from prophet.serialize import model_to_json
+import json
+
+
+
+# information from the Config file
+with open(r'Z:\Supply-Chain_management(SCM)\Source\config.json',"r") as f:
+    config = json.load(f)
 
 
 # Adding logger
 logger = get_logger("Prophet-Model-Training")
 
+def train_model_prophet(data,State):
 
-# Load Dataset
-logger.info('Loading DataSet')
+    # ----------------------------------Prepare data for Prophet---------------------------------#
 
-
-
-def train_model_prophet(data) -> Prophet:
-
-    # Prepare the data for Prophet
-    logger.info("Preparing Data for Prophet")
-    prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'}).copy()  
+    logger.info("Preparing Data for Prophet....")
+    prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'}).copy()    
+    train, test = train_test_split(prophet_data, test_size=0.2, shuffle=False)
+    
 
 
-    # Train test data seperation for model
-    test_size = 3
-    try:   
-        if len(prophet_data) < test_size + 2:
-            raise ValueError(
-                f"Dataset is too small. It has {len(prophet_data)} rows., but need atlest"
-                f"{test_size + 2} rows for testing"
-            )
-        train = prophet_data.iloc[:-test_size]
-        test = prophet_data['ds'].iloc[-test_size:]
 
-        logger.info(f'Train-test split completed, Training on {len(train)} rows and testing on {len(test)} rows')
-    except (ValueError, IndexError) as e:
-        logger.error(f"An error occured during train test spilt:{e}",exc_info=True)
-        exit()
-
-
-    # Prophet Model 
+    #------------------------------------Prophet Model-------------------------------------------# 
     try:
+
         logger.info("Fitting Data to the Model......")
         model = Prophet(
-        growth='linear',                 # 'linear' or 'logistic'
-        changepoint_range=0.5,        # % of data to check for changepoints
-        changepoint_prior_scale=0.05,   # Flexibility of trend changes
-        seasonality_mode='additive',    # 'additive' or 'multiplicative'
-        seasonality_prior_scale=10.0,
-        holidays_prior_scale=10.0,
-        yearly_seasonality='auto',      # Can be True / False / number of Fourier terms
-        weekly_seasonality='auto',
-        daily_seasonality='auto',
-        interval_width=0.80,            # Width of uncertainty interval
-        uncertainty_samples=1000        # For prediction intervals
+            changepoint_prior_scale=0.1,   # Flexibility of trend changes
+            seasonality_mode='multiplicative',    # 'additive' or 'multiplicative'
+            seasonality_prior_scale=10.0,
+            # holidays_prior_scale=10.0,
+            yearly_seasonality=True,      # Can be True / False / number of Fourier terms
+            weekly_seasonality=False,
+            daily_seasonality=False,
+            interval_width=0.80,            # Width of uncertainty interval
+            # uncertainty_samples=1000 
         )            
+        model.fit(prophet_data)
+        logger.info("Model Training Complete\n")
 
-        model.fit(train)
-        logger.info("Model Training Complete")
     except Exception as e:
         logger.error(f"An error occurred during model training: {e}", exc_info=True)
-        exit()
+        raise ValueError("Error in Model training Part") 
 
 
+    # ------------------------------------Model Evaluation--------------------------------------------#
     try:
-        # Model Evalution
-        future = model.make_future_dataframe(periods=3, freq='M')
+        
+        logger.info("Forecasting test and Future Data .........")
+        future = model.make_future_dataframe(periods=4, freq='M')
         forecast_future = model.predict(future)
-        forecast_train = model.predict(train['ds'])
-        logger.info("Model Evaluation Complete")
+        prophet_data_pred = model.predict(prophet_data)
+        test_pred = model.predict(test)
+        logger.info("Model Forecasting Complete\n")
+
+
+        logger.info("Calculating MAE and RMSE For Test....")
+        MAE = mean_absolute_error(prophet_data['y'], prophet_data_pred['yhat'])
+        RMSE = np.sqrt(mean_squared_error(prophet_data['y'], prophet_data_pred['yhat']))
+        
+        logger.info("MAE and RMSE calculated\n")
+        logger.info(f'Value of MAE for Prophet is {MAE:.2f}')
+        logger.info(f'Value of RMSE for Prophet is {RMSE:.2f}')
+
     except Exception as e:
         logger.error(f"An error occurred during model prediction: {e}", exc_info=True)
         exit()
+        
+
+        #------------------------------------ Saving Model and file-------------------------------------#
 
     try:
-        MAE_train = mean_absolute_error(train['y'], forecast_train['yhat'])
-        MAE = mean_absolute_error(train['y'], forecast_future['yhat'])
-        logger.info(f"Train data MAE is {MAE_train}")
-        logger.info(f"Forecast MAE is: {MAE}")
+        logger.info("Saving Model......")
+        with open(config[rf'Prophet_model_{State}'],"w") as fout:
+            fout.write(model_to_json(model))    
+        logger.info("Model Saved")
+
+        # Save MAE and RMSE
+        logger.info('Creating Report for Prophet Model.....')
+
+        timestamp = pd.Timestamp.now().strftime("%Y-%m-%d_%H-%M-%S")
+        save_model_performance = pd.DataFrame({
+            'Date' : [timestamp],
+            'Model': ['Prophet'],
+            'MAE':[MAE],
+            'RMSE':[RMSE]
+        })
+        save_model_performance.to_csv(config[f'model_evaluation_{State}'], mode = 'a', index = False, header=not pd.io.common.file_exists(config[f'model_evaluation_{State}']))
+        logger.info('Model Report Genearated\n')
+
+
+        # File for Forecast Value
+        logger.info("Saving Forecast Data to Excel File......")
+        save_model_performace = pd.DataFrame({
+            'Date' : prophet_data_pred['ds'],
+            'Forecast': prophet_data_pred['yhat'],
+            "Lower_Interval": prophet_data_pred['yhat_lower'],
+            "Upper_Interval": prophet_data_pred['yhat_upper']
+        })
+        save_model_performace.to_csv(config[rf'model_forecast_{State}'], index=False)
+    
+
     except Exception as e:
-        logger.error(f"An error occurred during MAE calculation: {e}", exc_info=True)
+        logger.error(f"Error Occured while Saving File :{e}", exc_info=True)
+        raise ValueError(f"Error Occured while Saving File")
+
+    return prophet_data, forecast_future, prophet_data_pred
+
+

@@ -76,13 +76,13 @@ def load_raw_data(Existing,new):
         # Datetime Foramt for Both DFs
         data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'],format = '%d-%m-%Y', errors='coerce')
         data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], format = '%d-%m-%Y', errors='coerce')
-        data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
-        data_new['Billing Date'] = data_new['Billing Date'].dt.date
+        # data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
+        # data_new['Billing Date'] = data_new['Billing Date'].dt.date
 
 
         # Combining Both Data
         logger.info("Staring Concating two df's........")
-        data_25 = pd.concat([data_existing, data_new])
+        data_25 = pd.concat([data_existing, data_new], ignore_index=True)
         logger.info("successfully Concated df's\n")
 
         initial = data_25.shape[0]

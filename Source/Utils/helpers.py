@@ -22,10 +22,11 @@ def load_data(file_data):
         raise FileNotFoundError(f"The file {file_data} does not exist.")
     
     if file_data.endswith(".csv"):
-        data = pd.read_csv(file_data)
+        data = pd.read_csv(file_data,encoding="cp1252")
     elif file_data.endswith(".xlsx"):
         data = pd.read_excel(file_data)
     else:
         raise ValueError("Unsupported file format. Please provide a CSV or Excel file.")
     
     return data
+
