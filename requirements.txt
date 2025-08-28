@@ -8,3 +8,17 @@ requests
 scikit-image
 prophet
 plotly
+pandas
+numpy
+scikit-learn
+statsmodels
+lightgbm
+fastapi
+uvicorn
+pyyaml
+joblib
+matplotlib
+pydantic
+# Optional: prophet (install if you want Prophet)
+# prophet
+

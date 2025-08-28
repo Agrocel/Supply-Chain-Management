@@ -26,7 +26,39 @@ with open(r'Z:\Supply-Chain_management(SCM)\Source\config.json',"r") as f:
 logger = get_logger("Prophet-Model-Training")
 
 def train_model_prophet(data,State):
+    """
+    Train and evaluate a Prophet model on time-series sales data.
 
+    This function prepares time-series data for the Prophet model, 
+    trains the model, evaluates its performance (MAE, RMSE), 
+    saves the model and forecast results, and returns the key outputs.
+
+    Steps:
+        1. Prepares data for Prophet by renaming columns ('Date' → 'ds', 'QTY_MT' → 'y').
+        2. Splits the data into train/test sets (80/20, no shuffle).
+        3. Trains a Prophet model with specified hyperparameters.
+        4. Generates predictions on historical, test, and future data (4 months ahead).
+        5. Calculates evaluation metrics: MAE and RMSE.
+        6. Saves:
+            - The trained Prophet model in JSON format.
+            - Model performance metrics in a CSV file (append mode).
+            - Forecast values (with confidence intervals) in a CSV file.
+        7. Returns Prophet-prepared data, forecast for future, and fitted predictions.
+
+    Args:
+        data (pd.DataFrame): Input dataset with at least 'Date' and 'QTY_MT' columns.
+        State (str): Name of the state, used for saving model and report files.
+
+    Returns:
+        tuple:
+            prophet_data (pd.DataFrame): Data formatted for Prophet ('ds', 'y').
+            forecast_future (pd.DataFrame): Forecasted values for future periods.
+            prophet_data_pred (pd.DataFrame): Model predictions on historical data.
+
+    Raises:
+        ValueError: If an error occurs during model training or saving.
+    """
+     
     # ----------------------------------Prepare data for Prophet---------------------------------#
 
     logger.info("Preparing Data for Prophet....")

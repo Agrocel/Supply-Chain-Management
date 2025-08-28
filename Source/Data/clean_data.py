@@ -59,7 +59,7 @@ def Clean_raw_data(data):
         Fully cleaned and transformed input data.
 
     """
-
+    
 
     # ---------------------PRODCUT COLUMN--------------------------------------#
     try:
@@ -87,7 +87,7 @@ def Clean_raw_data(data):
             for product, pattern in product_patterns.items():
                 if re.search(pattern, mat_desc, re.IGNORECASE):
                     return product
-            
+        
         
         logger.info("Creating Clean Product Column.......")
         data['Product'] = data['Mat. Desc.'].apply(map_product)
@@ -106,7 +106,6 @@ def Clean_raw_data(data):
 
 
 
-
     #-------------------------Create Season, Month and FY columns(mostly Date columns)--------------------------#
     try:
         # Billing Date Column
@@ -120,6 +119,9 @@ def Clean_raw_data(data):
         if invalid_data > 0:
             logger.warning(f"{invalid_data} invalid billing date row dropped due to conversion failure")
             data = data.dropna(subset=['Billing Date'])
+        
+        
+        
 
 
         # Month Column
@@ -132,8 +134,9 @@ def Clean_raw_data(data):
         
         logger.info("Creating Month Column......")    
         data = data.copy()                                
-        data.loc[:,'Month'] = data['Billing Date'].dt.strftime("%B").map(month_mapping) 
+        data.loc[:,'Month'] = data['Billing Date'].dt.strftime("%B").map(month_mapping)
         logger.info("successfully Created Month Column.\n")
+        
 
 
         # Season Column
