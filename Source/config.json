@@ -2,12 +2,27 @@
     "state_district" : "Data\\Raw\\external\\dealer_active_inactive_report.xlsx",
     "raw_data_path_24" : "Data\\Raw\\Sales\\Sales-20-24.csv",
     "raw_data_path_25" : "Data\\Raw\\Sales\\Sales-25(Jan-Apr).xlsx",
+
     "data": "Data\\Processed\\data.csv",
     "data_GJ" : "Data\\Processed\\data_GJ_25.csv",
     "data_MH" : "Data\\Processed\\data_MH_25.csv",
     "data_CG" : "Data\\Processed\\data_CG_25.csv",
     "data_TN" : "Data\\Processed\\data_TN_25.csv",
-    "data_mahalaabh" : "Data\\Processed\\data_mahalaabh_25.csv",
-    "Figure": "Reports\\Figures"
-    
-}
+    "model_evaluation_Gujarat":"Reports\\models\\Model_Report_GJ.csv",
+    "model_evaluation_Maharashtra":"Reports\\models\\Model_Report_MH.csv",
+    "model_evaluation_Chattisgarh":"Reports\\models\\Model_Report_CG.csv",
+    "model_evaluation_TamilNadu":"Reports\\models\\Model_Report_TN.csv",
+    "Figure": "Reports\\Figures",
+    "Prophet_model_Gujarat":"Reports\\models\\Prophet_model_GJ.json",
+    "Prophet_model_Maharashtra":"Reports\\models\\Prophet_model_MH.json",
+    "Prophet_model_Chattisgarh":"Reports\\models\\Prophet_model_CG.json",
+    "Prophet_model_TamilNadu":"Reports\\models\\Prophet_model_TN.json",
+    "model_forecast_Gujarat":"Reports\\models\\Model_Forecast_GJ.csv",
+    "model_forecast_Maharashtra":"Reports\\models\\Model_Forecast_MH.csv",
+    "model_forecast_Chattisgarh":"Reports\\models\\Model_Forecast_CG.csv",
+    "model_forecast_TamilNadu":"Reports\\models\\Model_Forecast_TN.csv",  
+    "Graph_Gujarat" : "Reports\\Figures\\Graph_Gujarat.html",
+    "Graph_Maharashtra" : "Reports\\Figures\\Graph_Maharashtra.html",
+    "Graph_Chattisgarh" : "Reports\\Figures\\Graph_Chattisgarh.html",
+    "Graph_TamilNadu" : "Reports\\Figures\\Graph_TamilNadu.html"
+    }

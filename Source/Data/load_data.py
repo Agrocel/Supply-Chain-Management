@@ -10,13 +10,16 @@ from Logging.logger import get_logger
 from Source.Utils.helpers import load_data
 import json
 
-# For Configuration of file
+
+# ----------------------------Configuration of files--------------------------------------
 with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
     config = json.load(f)
 
 
-# Logger
+# ----------------------------Logger------------------------------------------------------
 logger = get_logger("Load_data_set_files")
+
+
 
 def load_raw_data(Existing,new):
     """
@@ -53,7 +56,7 @@ def load_raw_data(Existing,new):
     """
 
 
-    # Load raw data
+    #-------------------- Load Existing and raw data--------------------#
     logger.info("Loading Dataset.........")
     data_existing= load_data(Existing)
     data_new = load_data(new)
@@ -62,18 +65,31 @@ def load_raw_data(Existing,new):
     try:
         logger.info("Formating Column in order in both df\n")
         required_columns = [
-            'Billing Date', 'Sold-To-Party Name', 'Basic Value', 'Invoice Value',
-            'Taxable Value', 'Agent Name', 'Plant Code', 'Mat. Code',
-            'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.']
+            'Billing Date', 'Sold-To-Party Name', 'Invoice Value', 'Plant Code',
+            'Mat. Desc.','Inv Qty.','Inv Qty UOM.']
 
 
         data_existing = data_existing[required_columns]
         data_new = data_new[required_columns]
 
+
+        # Datetime Foramt for Both DFs
+        data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'],format = '%d-%m-%Y', errors='coerce')
+        data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], format = '%d-%m-%Y', errors='coerce')
+        # data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
+        # data_new['Billing Date'] = data_new['Billing Date'].dt.date
+
+
+        # Combining Both Data
         logger.info("Staring Concating two df's........")
-        data_25 = pd.concat([data_existing, data_new])
+        data_25 = pd.concat([data_existing, data_new], ignore_index=True)
         logger.info("successfully Concated df's\n")
 
+        initial = data_25.shape[0]
+        final = data_25.shape[0]
+        logger.info(f'Number of row in data:{initial}\n')
+        data_25 = data_25.dropna(subset = ['Billing Date'])
+        logger.info(f'Number of rows Affected {final-initial}\n')
         missing = [col for col in required_columns if col not in data_25.columns]
 
         if missing:
@@ -82,9 +98,12 @@ def load_raw_data(Existing,new):
         else:
             data_25 = data_25[required_columns]
         logger.info("Columns are already Present in the Data.\n")
+        logger.info("Load Data Set Completed\n")
 
+        # Saving File
+        data_25.to_csv(r"Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv", index=False)
     except Exception as e:
         logger.error(f"Error in Foramting the Columns in df's :{e}")
-        raise ValueError("Error while foramting Column in df's{e}")
+        raise ValueError(f"Error while foramting Column in df's{e}")
     
     return data_25

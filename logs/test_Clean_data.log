@@ -1,0 +1,230 @@
+2025-08-07 12:23:41 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 12:24:00 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 12:24:00 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 12:26:21 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 12:26:34 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 12:26:34 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 12:29:50 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 12:30:02 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 12:30:02 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 12:35:30 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 12:35:37 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 12:35:37 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 12:41:37 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 12:41:46 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 12:41:46 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 14:08:47 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 14:08:56 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 14:08:56 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 14:18:22 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 14:18:29 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 14:18:29 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 14:55:07 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 14:55:14 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 14:55:14 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 14:56:42 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 14:56:49 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 14:56:49 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:14:30 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:14:37 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:14:37 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:15:16 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:15:22 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:15:22 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:17:08 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:17:14 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:17:14 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:24:39 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:25:02 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:25:02 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:52:08 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:52:30 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:52:30 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 15:59:10 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 15:59:35 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 15:59:35 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 16:04:58 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 16:05:06 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 16:05:06 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 16:06:21 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 16:06:38 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 16:06:38 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 16:12:08 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 16:12:39 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 16:12:39 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 17:32:12 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 17:32:20 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 17:32:20 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 17:34:32 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 17:34:42 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 17:34:42 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 17:36:05 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 17:36:17 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 17:36:17 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-07 18:08:16 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-07 18:08:59 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-07 18:08:59 | test_Clean_data | INFO | Loading Clean Data
+
+2025-08-18 10:43:54 | test_Clean_data | INFO | Loading Raw data
+
+2025-08-18 10:44:16 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-08-18 10:44:16 | test_Clean_data | INFO | Loading Clean Data
+

@@ -9,22 +9,24 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from Source.Utils.helpers import load_data
 from Logging.logger import get_logger
 import json
+from datetime import datetime 
 
 
-# information from the Config file
-with open('config.json',"r") as f:
+# ----------------------------Config File------------------------------#
+with open(r'Z:\\Supply-Chain_management(SCM)\\Source\\config.json',"r") as f:
     config = json.load(f)
 
 
-# Addes New Log file for Scm-data-Clean 
+# ----------------------------Log File---------------------------------#
 logger = get_logger("SCM-Data-Clean")
 
 
-# Data Required for the File to map 
+# ----------------------------State File Config Path ------------------# 
 state_district_df = load_data(config[r'state_district'])
 
 
-def Clean(data):
+
+def Clean_raw_data(data):
     """
     Cleans and filters raw SCM data for Mahalaabh-related analysis.
 
@@ -56,33 +58,16 @@ def Clean(data):
     data : pandas.DataFrame
         Fully cleaned and transformed input data.
 
-    data_mahalaabh : pandas.DataFrame
-        Filtered data containing only Mahalaabh-related products.
     """
+    
 
-
-    # logger.info("Checking if columns are same as required......")
-    # required_columns = [
-    #     'Billing Date', 'Sold-To-Party Name', 'Basic Value', 'Invoice Value',
-    #     'Taxable Value', 'Agent Name', 'Plant Code', 'Mat. Code',
-    #     'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.']
-
-    # missing = [col for col in required_columns if col not in data.columns]
-
-    # if missing:
-    #     logger.warning(f"Missing columns in the dataset: {missing}")
-    #     raise ValueError(f'Missing required columns :{missing}')
-    # else:
-    #     data = data[required_columns]
-    # logger.info("Columns are already Present in the Data.\n")
-
-
-    # Map Product and Clean Mat. Desc. Column
+    # ---------------------PRODCUT COLUMN--------------------------------------#
     try:
         product_patterns = {                            
             "Dripsafe": r"^dripsafe.*",
             "Herbovita": r"^herbovita.*",
             "Mahakite": r".*mahakite.*",
+            "Boost-1kg": r"Potassium Schoenite (Boost-1kg )",
             "Mahalaabh Gr.": r"^mahalaabh.*",
             "Mahalaabh": r"^potassium.*",
             "Neem oil ": r"^neem oil.*",
@@ -102,11 +87,12 @@ def Clean(data):
             for product, pattern in product_patterns.items():
                 if re.search(pattern, mat_desc, re.IGNORECASE):
                     return product
-            return "value not Found in product_pattern"
-
+        
+        
         logger.info("Creating Clean Product Column.......")
         data['Product'] = data['Mat. Desc.'].apply(map_product)
         logger.info("Sucessfully Created Product Column.\n")
+
 
         logger.info("Dropping NA value in Product Columns.......")
         initial_count = data.shape[0]
@@ -120,28 +106,52 @@ def Clean(data):
 
 
 
-    # Create Season, Month and FY columns(mostly Date columns)
+    #-------------------------Create Season, Month and FY columns(mostly Date columns)--------------------------#
     try:
-        data['Billing Date'] = pd.to_datetime(data['Billing Date'], format='%Y-%m-%d', errors='coerce')
+        # Billing Date Column
+        logger.info("Converting Billing Date to datetime format.......")
+        # data.loc[: ,'Billing Date'] = pd.to_datetime(data['Billing Date'], format='%d-%m-%Y', errors='coerce')
+        # data.loc[:,'Billing Date'] = pd.to_datetime(data['Billing Date'],format='%d-%m-%Y', errors='coerce')
+        # data.loc[: ,'Billing Date'] = data['Billing Date'].dt.date()
 
+
+        invalid_data = data['Billing Date'].isna().sum()
+        if invalid_data > 0:
+            logger.warning(f"{invalid_data} invalid billing date row dropped due to conversion failure")
+            data = data.dropna(subset=['Billing Date'])
+        
+        
+        
+
+
+        # Month Column
         month_mapping = {
             "January": "Jan", "February": "Feb", "March": "March",
             "April": "April", "May": "May", "June": "June",
             "July": "July", "August": "Aug", "September": "Sep",
             "October": "Oct", "November": "Nov", "December": "Dec"
         }
-
-        logger.info("Creating Month Column......")                                    
-        data['Month'] = data['Billing Date'].dt.strftime("%B").map(month_mapping) 
+        
+        logger.info("Creating Month Column......")    
+        data = data.copy()                                
+        data.loc[:,'Month'] = data['Billing Date'].dt.strftime("%B").map(month_mapping)
         logger.info("successfully Created Month Column.\n")
+        
 
+
+        # Season Column
         logger.info("Creating Season Column.......")
-        data["Season"] = data["Month"].apply(
+        data = data.copy() 
+        data.loc[:,"Season"] = data["Month"].apply(
             lambda x: "Kharif" if x in ["April", "May", "June", "July", "Aug", "Sep"] else "Rabi"
         )
         logger.info('Successfully Created Season column.\n')
 
-        def get_financial_year(date):               # Extract Financial year
+        # F-Y Column
+        def get_financial_year(date):               
+
+            if pd.isna(date):
+                return np.nan
             year = date.year
             month = date.month
 
@@ -155,17 +165,24 @@ def Clean(data):
             return f"{str(fy_start)[-2:]}-{str(fy_end)[-2:]}"       # Format as 'YY-YY'
 
         logger.info("Creating FY Column..........")
-        data['FY'] = data['Billing Date'].apply(get_financial_year)
+        data = data.copy() 
+        data.loc[:,'FY'] = data['Billing Date'].apply(get_financial_year)
         logger.info("Successfully Created FY Column\n")
 
-        data['Year'] = data['Billing Date'].dt.year
+        # Month and Year Column
         data['Num_Month'] = data['Billing Date'].dt.month
+        data['Year'] = data['Billing Date'].dt.year
+
+        # Billing Date to Date
+        data = data.rename(columns = {"Billing Date":"Date"})
 
     except Exception as e:
-        logger.error(f"Error occured while Creating Season,Month or FY Columns:{e}")
+        logger.error(f"Error occured while Creating Season,Month or FY Columns:{e}",exc_info=True)
+        raise ValueError(f"Error Occured while Creating Season,Month or FY Columns")
 
 
 
+    #-----------------------------------Plant Code Columns------------------------------------------------#
     try:
         plant_state_mapping = {
         "CAP1": "Andhra Pradesh",
@@ -186,59 +203,113 @@ def Clean(data):
         }
 
         logger.info("Creating State Columns.......")
-        data['State'] = data['Plant Code'].map(plant_state_mapping)
+        data = data.copy() 
+        data.loc[:,'State'] = data['Plant Code'].map(plant_state_mapping)
         logger.info("Successfully Created State Columns\n")
 
     except Exception as e:
         logger.error(f"Error occured while Creating State column:{e}")
 
 
-    # Creates New Columns, filter data(mahalaabh).
-    Deaslership_to_district = state_district_df.set_index('Dealership Name')['District'].to_dict()
-    data['District'] = data['Sold-To-Party Name'].map(Deaslership_to_district)
-    logger.info(f"Number of rows where district is not found:{data['District'].isna().sum()}")
-    data.rename(columns = {"Billing Date":"Date"}, inplace =True)
 
-
-    logger.info("Filtering Mahalaabh and Gr. from the data.....")
-    data_mahalaabh = data[data['Product'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
-    logger.info(f"Number of rows after filtering:{data_mahalaabh.shape}\n")
+    # --------------------------------------District Column ----------------------------------------------#
+    try: 
+        logger.info("Mapping Dealership to District Column....... ")
+        Dealership_to_district = state_district_df.set_index('Dealership Name')['District'].to_dict()
+        data = data.copy() 
+        data.loc[:,'District'] = data['Sold-To-Party Name'].map(Dealership_to_district)
+        logger.info(f"Number of rows where district is not found:{data['District'].isna().sum()}")
+    except Exception as e:
+        logger.error(f"Error occured while Creating District column:{e}")
+        raise ValueError(f"Error Occured while Creating District column")
     
-    if data_mahalaabh.empty:
-        logger.warning("No mahalaabh record found after filtering")
 
-    logger.info('Converting Kg to MT.....')
-    data_mahalaabh['UOM'] = 'MT'
-    data_mahalaabh['QTY_MT'] = data_mahalaabh['Inv Qty.'] / 1000
-    logger.info("Sucessfully Converted Kg to MT\n")
+    # ----------------------------------------Filtering Mahalaabh----------------------------------------#
+    try:
+        logger.info("Filtering Mahalaabh and Gr. from the data.....")
+        data = data[data['Product'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
+        logger.info(f"Number of rows after filtering:{data.shape}\n")
+        
+        if data.empty:
+            logger.warning("No mahalaabh record found after filtering")
+        
 
 
-    logger.info("Required Columns.......")
-    required_col = ['Date','District','Product','QTY_MT','UOM','Season',"State",'FY','Month','Invoice Value','Num_Month','Year']
-    missing_col = [col for col in required_col if col not in data_mahalaabh.columns]
-    if missing_col:
-        logger.error(f'Missing Columns(columns are not matching):{missing_col}\n')
+    except Exception as e:
+        logger.error(f"Error occured while Filtering Mahalaabh:{e}")
+        raise ValueError(f"Error Occured while Filtering Mahalaabh")
+
+
+    # ---------------------------------------------QTY_MT--------------------------------------#
+    try:
+        logger.info('Converting Kg to MT.....')
+        data['UOM'] = 'MT'
+        data.loc[:, 'Inv Qty.'] = pd.to_numeric(data['Inv Qty.'], errors='coerce')
+        data.loc[:, 'QTY_MT'] = data['Inv Qty.'] / 1000
+        logger.info("Sucessfully Converted Kg to MT\n")
+
+
+    except Exception as e:
+        logger.error(f"Error occured while converting Kg to MT:{e}")
+        raise ValueError(f"Error Occured while converting Kg to MT:{e}")
+
+
+    # -------------------------------------------Monthly------------------------------------------------#
+    try:
+        data = data.copy()
+        data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({  
+            'Product': 'first',
+            'Invoice Value': 'sum',
+            'QTY_MT': 'sum',
+            'UOM': 'first',
+            'Season': 'first',
+            'FY': 'first',
+            'Month': 'first',
+            'Num_Month': 'first',
+            'Year': 'first',
+        }).reset_index() 
+    except Exception as e:
+        logger.error(f"Error occured while creating monthly data:{e}")
+        raise ValueError(f"Error Occured while creating monthly data")
+
+
+    # -------------------------------------------Columns Format--------------------------------# 
+    try:
+
+        logger.info("Required Columns.......")
+        required_col = ['Date','Product','QTY_MT','UOM','Season',"State",'FY','Month','Invoice Value','Num_Month','Year']
+        missing_col = [col for col in required_col if col not in data.columns]
+        if missing_col:
+            logger.error(f'Missing Columns(columns are not matching):{missing_col}\n')
+        data = data[required_col]
+        
+        data_GJ = data[data['State'] == 'Gujarat'].copy()
+        data_MH = data[data['State'] == 'Maharashtra'].copy()
+        data_CG = data[data['State'] == 'Chhattisgarh'].copy()
+        data_TN = data[data['State'] == 'Tamil Nadu'].copy()
+
+        logger.info("Sucessfully Created MH,TN,CG,GJ varaible")
+        logger.info("---- Step Completed ----\n")
+
+    except Exception as e:
+        logger.error(f"Error occured while creating state wise dataframes:{e}")
+        raise ValueError(f"Error Occured while creating state wise dataframes")
     
-    data_mahalaabh = data_mahalaabh[required_col]
-
-    data_GJ = data_mahalaabh[data_mahalaabh['State'] == 'Gujarat']
-    data_MH = data_mahalaabh[data_mahalaabh['State'] == 'Maharashtra']
-    data_CG = data_mahalaabh[data_mahalaabh['State'] == 'Chhattisgarh']
-    data_TN = data_mahalaabh[data_mahalaabh['State'] == 'Tamil Nadu']
-    logger.info("Sucessfully Created MH,TN,CG,GJ varaible")
-    logger.info("---- Step Completed ----\n")
 
 
+    # -----------------------------------Creating CSV file--------------------------------------------#
     try:
         logger.info("Creating CSV for data.......")
-        data_GJ.to_csv(config[r"data_GJ.csv"], index=False)
-        data_MH.to_csv(config[r"data_MH.csv"], index=False)
-        data_CG.to_csv(config[r"data_CG.csv"], index=False)
-        data_TN.to_csv(config[r"data_TN.csv"], index=False)
+        data_GJ.to_csv(config[r"data_GJ"], index=False)
+        data_MH.to_csv(config[r"data_MH"], index=False)
+        data_CG.to_csv(config[r"data_CG"], index=False)
+        data_TN.to_csv(config[r"data_TN"], index=False)
+        data.to_csv(config[r"data"], index=False)
         logger.info('Successfully created CSV files.\n')
 
     except Exception as e:
         logger.error(f"Error occurred while writing CSV files: {e}")
+        raise ValueError("Error while writing CSV files")
 
 
-    return data_GJ, data_CG, data_MH, data_TN, data_mahalaabh,data
+    return data_GJ, data_CG, data_MH, data_TN, data
