@@ -22,3 +22,4 @@ if __name__ == "__main__":
     logger.info("Loading Raw data\n")
     data = load_raw_data(data_existing, data_new)
     print(data['Billing Date'].dtype)
+    print(data.shape)

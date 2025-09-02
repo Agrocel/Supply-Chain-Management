@@ -1453,3 +1453,449 @@
 
 2025-08-18 11:40:14 | Load_data_set_files | INFO | Load Data Set Completed
 
+2025-09-01 17:58:37 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-01 18:00:47 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-01 18:03:54 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-01 18:03:57 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-01 18:03:58 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-01 18:03:58 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :'NoneType' object is not subscriptable
+2025-09-01 18:06:49 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 09:41:21 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 09:42:36 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 09:42:40 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 09:42:40 | Load_data_set_files | INFO | Load Data Set Completed
+
+2025-09-02 09:52:25 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 09:52:28 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 09:52:28 | Load_data_set_files | INFO | Load Data Set Completed
+
+2025-09-02 09:54:38 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 09:54:41 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 09:54:41 | Load_data_set_files | INFO | Load Data Set Completed
+
+2025-09-02 10:01:15 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:01:19 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:01:19 | Load_data_set_files | INFO | Load Data Set Completed
+
+2025-09-02 10:04:16 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:04:18 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:04:18 | Load_data_set_files | INFO | Load Data Set Completed
+
+2025-09-02 10:16:24 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:16:25 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:16:25 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:16:25 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :'tuple' object is not callable
+2025-09-02 10:18:22 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:18:32 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:18:32 | Load_data_set_files | INFO | Load Data Set Completed
+(0, 7)
+2025-09-02 10:24:55 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:24:57 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:24:57 | Load_data_set_files | INFO | Load Data Set Completed
+(0, 7)
+2025-09-02 10:27:05 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 10:27:08 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Number of row in data:51861
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 10:27:08 | Load_data_set_files | INFO | Load Data Set Completed
+(0, 7)
+2025-09-02 10:30:10 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 11:43:22 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 11:46:31 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 11:57:19 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 11:57:32 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 11:57:32 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:00:46 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:00:54 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:00:54 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:01:27 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:01:34 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:01:34 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:04:59 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:05:21 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:05:21 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:10:30 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:10:46 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:10:46 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:11:50 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:12:06 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:12:06 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:18:51 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:24:17 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 12:24:24 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:24:24 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 12:40:30 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Before Concat:(4093, 7).(54120, 7)
+2025-09-02 12:40:34 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Number of row in data:58213
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 12:40:34 | Load_data_set_files | INFO | Load Data Set Completed
+(58213, 7)
+2025-09-02 15:23:50 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Before Concat:(4093, 7).(58213, 7)
+2025-09-02 15:23:54 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Number of row in data:62306
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 15:23:54 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-02 15:32:54 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Before Concat:(4093, 7).(4700, 7)
+2025-09-02 15:32:59 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Number of row in data:8793
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 15:32:59 | Load_data_set_files | INFO | Load Data Set Completed
+(8793, 7)
+2025-09-02 15:36:36 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Before Concat:(8793, 7).(54120, 7)
+2025-09-02 15:36:40 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 15:36:40 | Load_data_set_files | INFO | Load Data Set Completed
+(54120, 7)
+2025-09-02 16:08:33 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-02 16:08:41 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:08:41 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-02 16:15:30 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Before Concat:(4093, 7).(58820, 7)
+2025-09-02 16:15:33 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:15:33 | Load_data_set_files | INFO | Load Data Set Completed
+(0, 7)
+2025-09-02 16:17:06 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Before Concat:(4093, 7).(58820, 7)
+2025-09-02 16:17:09 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:17:09 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-02 16:25:15 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:25:20 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:25:20 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Before Concat:(4700, 7).(62913, 7)
+2025-09-02 16:25:21 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Number of row in data:67613
+
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:25:21 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-02 16:42:02 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Before Concat:(4700, 7).(62913, 7)
+2025-09-02 16:42:06 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Number of row in data:67613
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:42:06 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-02 16:42:40 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Before Concat:(4700, 7).(62913, 7)
+2025-09-02 16:42:45 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Number of row in data:67613
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-02 16:42:45 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)

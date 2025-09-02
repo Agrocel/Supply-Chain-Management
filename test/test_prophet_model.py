@@ -32,4 +32,5 @@ if __name__ == "__main__":
 
     logger.info("Loading Clean Data\n")
     data_GJ, data_CG, data_MH, data_TN, data = Clean_raw_data(data)
-    prophet_data, forecast_future, prophet_data_pred =train_model_prophet(data_GJ)
+    prophet_data, forecast_future, prophet_data_pred =train_model_prophet(data_GJ,'Gujarat')
+    

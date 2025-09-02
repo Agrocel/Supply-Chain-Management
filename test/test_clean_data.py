@@ -29,3 +29,4 @@ if __name__ == "__main__":
 
     logger.info("Loading Clean Data\n")
     data_GJ, data_CG, data_MH, data_TN, data = Clean_raw_data(data)
+    print(data_GJ.shape)

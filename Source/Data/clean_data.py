@@ -43,9 +43,8 @@ def Clean_raw_data(data):
 
     Returns:
     -------
-    data_gj : pandas.DataFrame
+    data_gj : pandas.DataFrame 
         Filtered Mahalaabh data for Gujarat.
-
     data_mh : pandas.DataFrame
         Filtered Mahalaabh data for Maharashtra.
 
@@ -61,13 +60,14 @@ def Clean_raw_data(data):
     """
     
 
-    # ---------------------PRODCUT COLUMN--------------------------------------#
+    # ---------------------PRODUCT COLUMN--------------------------------------#
     try:
         product_patterns = {                            
             "Dripsafe": r"^dripsafe.*",
             "Herbovita": r"^herbovita.*",
             "Mahakite": r".*mahakite.*",
             "Boost-1kg": r"Potassium Schoenite (Boost-1kg )",
+            "mahalaabh bulk" : r"Potassium Schoenite(Potassium Schoenite)",
             "Mahalaabh Gr.": r"^mahalaabh.*",
             "Mahalaabh": r"^potassium.*",
             "Neem oil ": r"^neem oil.*",
@@ -119,9 +119,6 @@ def Clean_raw_data(data):
         if invalid_data > 0:
             logger.warning(f"{invalid_data} invalid billing date row dropped due to conversion failure")
             data = data.dropna(subset=['Billing Date'])
-        
-        
-        
 
 
         # Month Column

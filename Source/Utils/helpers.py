@@ -29,4 +29,3 @@ def load_data(file_data):
         raise ValueError("Unsupported file format. Please provide a CSV or Excel file.")
     
     return data
-
