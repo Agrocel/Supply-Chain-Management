@@ -61,11 +61,16 @@ def train_model_prophet(data,State):
      
     # ----------------------------------Prepare data for Prophet---------------------------------#
 
-    logger.info("Preparing Data for Prophet....")
-    prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'}).copy()    
-    train, test = train_test_split(prophet_data, test_size=0.2, shuffle=False)
+    try:
     
+        logger.info("Preparing Data for Prophet....")
+        prophet_data = data[['Date', 'QTY_MT']].rename(columns = {'Date':'ds', 'QTY_MT':'y'}).copy()    
+        #train, test = train_test_split(prophet_data, test_size=0.2, shuffle=False)
+        #logger.info(f"Data Prepared for Prophet : {train.shape}, {test.shape}\n")
 
+    except Exception as e:
+        logger.error(f"An error occurred during data preparation: {e}", exc_info=True)
+        raise ValueError("Error in Data Preparation Part")
 
 
     #------------------------------------Prophet Model-------------------------------------------# 
@@ -98,7 +103,7 @@ def train_model_prophet(data,State):
         future = model.make_future_dataframe(periods=4, freq='M')
         forecast_future = model.predict(future)
         prophet_data_pred = model.predict(prophet_data)
-        test_pred = model.predict(test)
+        # test_pred = model.predict(test)
         logger.info("Model Forecasting Complete\n")
 
 

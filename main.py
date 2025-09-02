@@ -5,6 +5,7 @@ import sys
 import os 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..','..')))
 from Logging.logger import get_logger 
 from Source.Data.load_data import load_raw_data
 from Source.Data.clean_data import Clean_raw_data
@@ -12,7 +13,7 @@ from Source.Models.train_prophet import train_model_prophet
 from Source.Evalution.evalution import interactive_evalution
 
 
-data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-20-25(Jan-June).csv"
+data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Processed\data-25-Aug.csv"
 data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-July.xlsx'
 
 
@@ -62,4 +63,4 @@ if  __name__ == "__main__":
 
     logger.info("TamilNadu Started......")
     TamilNadu(data_TN, 'TamilNadu')
-    logger.info("TamilNadu Completed ") 
+    logger.info("TamilNadu Completed ")

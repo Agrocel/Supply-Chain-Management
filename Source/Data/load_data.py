@@ -57,6 +57,7 @@ def load_raw_data(Existing,new):
 
 
     #-------------------- Load Existing and raw data--------------------#
+
     logger.info("Loading Dataset.........")
     data_existing= load_data(Existing)
     data_new = load_data(new)
@@ -73,15 +74,17 @@ def load_raw_data(Existing,new):
         data_new = data_new[required_columns]
 
 
-        # Datetime Foramt for Both DFs
+        # ----------------------------Datetime Foramt for Both DFs-----------------------------------------#
         data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'],format = '%d-%m-%Y', errors='coerce')
         data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], format = '%d-%m-%Y', errors='coerce')
         # data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
         # data_new['Billing Date'] = data_new['Billing Date'].dt.date
 
 
-        # Combining Both Data
+        #----------------------------Combining Both Data---------------------------------------------------#
+
         logger.info("Staring Concating two df's........")
+        logger.info(f"Before Concat:{data_new.shape}.{data_existing.shape}")
         data_25 = pd.concat([data_existing, data_new], ignore_index=True)
         logger.info("successfully Concated df's\n")
 
@@ -98,12 +101,16 @@ def load_raw_data(Existing,new):
         else:
             data_25 = data_25[required_columns]
         logger.info("Columns are already Present in the Data.\n")
-        logger.info("Load Data Set Completed\n")
+        logger.info(f"Load Data Set Completed\n{data_25.shape}")
+        
 
-        # Saving File
+        #-----------------------------------------Saving File----------------------------------------------#
         data_25.to_csv(r"Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv", index=False)
+        
     except Exception as e:
-        logger.error(f"Error in Foramting the Columns in df's :{e}")
-        raise ValueError(f"Error while foramting Column in df's{e}")
+        logger.error(f"Error in Foramting the Columns in df's :{e}",exc_info=True)
+        raise ValueError(f"Error while foramting Column in df's")
+        
+        
     
     return data_25
