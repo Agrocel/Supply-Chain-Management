@@ -254,6 +254,7 @@ def Clean_raw_data(data):
     # -------------------------------------------Monthly------------------------------------------------#
     try:
         data = data.copy()
+        data['Invoice Value'] = data.to_numeric(data['Invoice Value'], errors='coerce')
         data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({  
             'Product': 'first',
             'Invoice Value': 'sum',
