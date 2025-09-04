@@ -1899,3 +1899,433 @@
 
 2025-09-02 16:42:45 | Load_data_set_files | INFO | Load Data Set Completed
 (62913, 7)
+2025-09-03 10:53:56 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Before Concat:(4700, 7).(62913, 7)
+2025-09-03 10:54:01 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Number of row in data:67613
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-03 10:54:01 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-03 16:08:30 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Before Concat:(4700, 7).(62913, 7)
+2025-09-03 16:08:35 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Number of row in data:67613
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-03 16:08:35 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-04 09:55:20 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 09:55:25 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 09:55:25 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 09:55:26 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 09:55:26 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:00:00 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:00:04 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:00:04 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:03:53 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:03:56 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:03:57 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:03:57 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:05:19 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:05:22 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:05:22 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:05:22 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:05:22 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:05:22 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:05:23 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:05:23 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:05:23 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:05:23 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:09:35 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:09:39 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:09:39 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:16:11 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:16:14 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:16:14 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:29:50 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:29:53 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:29:53 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:30:14 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:30:17 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:30:17 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:38:18 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:38:21 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:38:21 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:38:46 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:38:49 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:38:49 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:41:31 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Before Concat:(4700, 7).(4093, 7)
+2025-09-04 10:41:35 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Number of row in data:8793
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:41:35 | Load_data_set_files | INFO | Load Data Set Completed
+(8793, 7)
+2025-09-04 10:41:51 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Before Concat:(4700, 7).(4093, 7)
+2025-09-04 10:41:56 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Number of row in data:8793
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:41:56 | Load_data_set_files | INFO | Load Data Set Completed
+(8793, 7)
+2025-09-04 10:46:03 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Before Concat:(4700, 7).(54120, 7)
+2025-09-04 10:46:09 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:46:09 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 10:58:00 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Before Concat:(4093, 7).(58820, 7)
+2025-09-04 10:58:02 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:58:02 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-04 10:58:22 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Before Concat:(4093, 7).(4093, 7)
+2025-09-04 10:58:24 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 10:58:24 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-04 11:08:17 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Before Concat:(4093, 7).(4093, 7)
+2025-09-04 11:08:20 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 11:08:20 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-04 11:11:12 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | head of existing data   Billing Date             Sold-To-Party Name  Invoice Value Plant Code                            Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1        Agrocel's Neemaction 1 Litre       0.0            L
+1   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00       CAP1        Agrocelâ€™s Neemaction 1 Litre      48.0            L
+2   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1           Agrocel's Neemaction 500 ML       0.0            L
+3   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00       CAP1           Agrocel's Neemaction 500 ML      50.0            L
+4   2025-08-05                 P.A.C.S MIDJIL        8130.15       CAP1  Potassium Schoenite (Mahalaabh-1 kg)     100.0           KG
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Info of existing data None
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Before Concat:(4093, 7),(4093, 7)
+2025-09-04 11:11:15 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 11:11:15 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-04 11:14:01 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | head of existing data   Billing Date             Sold-To-Party Name  Invoice Value Plant Code                            Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1          Agrocel’s Neemaction 1 Litre       0.0            L
+1   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00       CAP1          Agrocel’s Neemaction 1 Litre      48.0            L
+2   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1           Agrocel's Neemaction 500 ML       0.0            L
+3   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00       CAP1           Agrocel's Neemaction 500 ML      50.0            L
+4   2025-08-05                 P.A.C.S MIDJIL        8130.15       CAP1  Potassium Schoenite (Mahalaabh-1 kg)     100.0           KG
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Info of existing data None
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Before Concat:(4093, 7),(4093, 7)
+2025-09-04 11:14:04 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Number of row in data:8186
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 11:14:04 | Load_data_set_files | INFO | Load Data Set Completed
+(4093, 7)
+2025-09-04 11:32:35 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | head of existing data   Billing Date Plant Code             Sold-To-Party Name  Mat. Desc.  ...  Inv Qty UOM. Invoice Value  Net off price  NRV(in Lakhs)
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR    Dripsafe  ...            MT       5512.96           56.0         0.0420
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Dripsafe  ...            MT      11027.10           56.0         0.0840
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  Herbovita   ...            KL       4672.50          380.0         0.0380
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  Herbovita   ...            KL       5046.30          380.0         0.0380
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Mahakite  ...           Nos       1995.38           37.0         0.0185
+
+[5 rows x 9 columns]
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Info of existing data None
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Before Concat:(4700, 7),(54120, 7)
+2025-09-04 11:32:41 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Number of row in data:58820
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 11:32:41 | Load_data_set_files | INFO | Load Data Set Completed
+(58820, 7)
+2025-09-04 11:34:46 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | head of existing data   Billing Date             Sold-To-Party Name  Invoice Value Plant Code  Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR        5512.96       CGJ1    Dripsafe      75.0           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.10       CGJ1    Dripsafe     150.0           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.50       CGJ1  Herbovita       10.0           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.30       CGJ1  Herbovita       10.0           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR        1995.38       CGJ1    Mahakite      50.0          Nos
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Info of existing data None
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Before Concat:(4093, 7),(58820, 7)
+2025-09-04 11:34:49 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 11:34:49 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-04 14:08:17 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 14:11:18 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Loading Dataset.........
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Dataset completly loaded 
+
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Formating Column in order in both df
+
+2025-09-04 14:13:02 | Load_data_set_files | INFO | head of existing data   Billing Date             Sold-To-Party Name  Invoice Value Plant Code  Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR        5512.96       CGJ1    Dripsafe      75.0           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.10       CGJ1    Dripsafe     150.0           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.50       CGJ1  Herbovita       10.0           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.30       CGJ1  Herbovita       10.0           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR        1995.38       CGJ1    Mahakite      50.0          Nos
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Info of existing data None
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Staring Concating two df's........
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Before Concat:(62913, 7),(62913, 7)
+2025-09-04 14:13:02 | Load_data_set_files | INFO | successfully Concated df's
+
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Number of row in data:125826
+
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Number of rows Affected -4700
+
+2025-09-04 14:13:02 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-04 14:13:03 | Load_data_set_files | INFO | Load Data Set Completed
+(121126, 7)

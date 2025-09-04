@@ -62,14 +62,15 @@ def Clean_raw_data(data):
 
     # ---------------------PRODUCT COLUMN--------------------------------------#
     try:
+        logger.info("Mapping Product Column.......")
+        data = data[~data['Mat. Desc.'].isin(['Potassium Schoenite (Boost-1kg )','Potassium Schoenite(Potassium Schoenite)'])]
+
         product_patterns = {                            
             "Dripsafe": r"^dripsafe.*",
             "Herbovita": r"^herbovita.*",
             "Mahakite": r".*mahakite.*",
-            "Boost-1kg": r"Potassium Schoenite (Boost-1kg )",
-            "mahalaabh bulk" : r"Potassium Schoenite(Potassium Schoenite)",
-            "Mahalaabh Gr.": r"^mahalaabh.*",
-            "Mahalaabh": r"^potassium.*",
+            "Mahalaabh Gr.": r"(?i)^mahalaabh.*",
+            "Mahalaabh": r"(?i)^potassium.*",
             "Neem oil ": r"^neem oil.*",
             "Neem cake": r".*cake.*",
             "Quickact ": r".*quickact.*",
@@ -102,7 +103,8 @@ def Clean_raw_data(data):
         logger.info(f"Number of rows removed: {rows_removed}\n")
 
     except Exception as e:
-        logger.error(f"Error occured while mapping product :{e}")
+        logger.error(f"Error occured while mapping product :{e}",exc_info=True)
+        raise ValueError(f"Error Occured while mapping product")
 
 
 
@@ -205,7 +207,10 @@ def Clean_raw_data(data):
         logger.info("Successfully Created State Columns\n")
 
     except Exception as e:
-        logger.error(f"Error occured while Creating State column:{e}")
+        logger.error(f"Error occured while Creating State column:{e}",exc_info=True)
+        raise ValueError(f"Error Occured while Creating State column")
+
+
 
 
 
@@ -217,13 +222,13 @@ def Clean_raw_data(data):
         data.loc[:,'District'] = data['Sold-To-Party Name'].map(Dealership_to_district)
         logger.info(f"Number of rows where district is not found:{data['District'].isna().sum()}")
     except Exception as e:
-        logger.error(f"Error occured while Creating District column:{e}")
+        logger.error(f"Error occured while Creating District column:{e}", exc_info=True)
         raise ValueError(f"Error Occured while Creating District column")
     
 
     # ----------------------------------------Filtering Mahalaabh----------------------------------------#
     try:
-        logger.info("Filtering Mahalaabh and Gr. from the data.....")
+        logger.info(f"Filtering Mahalaabh and Gr. from the data.....{data.shape}")
         data = data[data['Product'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
         logger.info(f"Number of rows after filtering:{data.shape}\n")
         
@@ -233,7 +238,7 @@ def Clean_raw_data(data):
 
 
     except Exception as e:
-        logger.error(f"Error occured while Filtering Mahalaabh:{e}")
+        logger.error(f"Error occured while Filtering Mahalaabh:{e}", exc_info=True)
         raise ValueError(f"Error Occured while Filtering Mahalaabh")
 
 
@@ -247,13 +252,15 @@ def Clean_raw_data(data):
 
 
     except Exception as e:
-        logger.error(f"Error occured while converting Kg to MT:{e}")
-        raise ValueError(f"Error Occured while converting Kg to MT:{e}")
+        logger.error(f"Error occured while converting Kg to MT:{e}",exc_info=True)
+        raise ValueError("Error Occured while converting Kg to MT")
 
 
     # -------------------------------------------Monthly------------------------------------------------#
     try:
         data = data.copy()
+        logger.info(f"data type of all columns", data.info())
+        data.loc[:, 'Invoice Value'] = pd.to_numeric(data['Invoice Value'], errors='coerce')
         data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({  
             'Product': 'first',
             'Invoice Value': 'sum',
@@ -266,7 +273,7 @@ def Clean_raw_data(data):
             'Year': 'first',
         }).reset_index() 
     except Exception as e:
-        logger.error(f"Error occured while creating monthly data:{e}")
+        logger.error(f"Error occured while creating monthly data:{e}",exc_info=True)
         raise ValueError(f"Error Occured while creating monthly data")
 
 
@@ -289,7 +296,7 @@ def Clean_raw_data(data):
         logger.info("---- Step Completed ----\n")
 
     except Exception as e:
-        logger.error(f"Error occured while creating state wise dataframes:{e}")
+        logger.error(f"Error occured while creating state wise dataframes:{e}",exc_info=True)
         raise ValueError(f"Error Occured while creating state wise dataframes")
     
 
@@ -305,7 +312,7 @@ def Clean_raw_data(data):
         logger.info('Successfully created CSV files.\n')
 
     except Exception as e:
-        logger.error(f"Error occurred while writing CSV files: {e}")
+        logger.error(f"Error occurred while writing CSV files: {e}",exc_info=True)
         raise ValueError("Error while writing CSV files")
 
 

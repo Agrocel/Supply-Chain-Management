@@ -268,3 +268,213 @@
 4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
 2025-09-02 12:12:13 | test_Clean_data | INFO | Loading Clean Data
 
+2025-09-04 09:55:20 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 09:55:43 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 09:55:43 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:00:00 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:00:10 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:00:10 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:03:53 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:04:07 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:04:07 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:05:19 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:05:44 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:05:44 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:09:35 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:09:47 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:09:47 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:16:11 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:16:19 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:16:19 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:29:50 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:29:55 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:29:55 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:30:14 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:30:20 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:30:20 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:38:18 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:38:27 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:38:27 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:38:46 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:38:51 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name Invoice Value Plant Code  Mat. Desc. Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR       5512.96       CGJ1    Dripsafe       75           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.1       CGJ1    Dripsafe      150           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.5       CGJ1  Herbovita        10           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.3       CGJ1  Herbovita        10           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR       1995.38       CGJ1    Mahakite       50          Nos
+2025-09-04 10:38:51 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:41:31 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:41:36 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name  Invoice Value Plant Code                            Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1          Agrocel’s Neemaction 1 Litre       0.0            L
+1   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00       CAP1          Agrocel’s Neemaction 1 Litre      48.0            L
+2   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1           Agrocel's Neemaction 500 ML       0.0            L
+3   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00       CAP1           Agrocel's Neemaction 500 ML      50.0            L
+4   2025-08-05                 P.A.C.S MIDJIL        8130.15       CAP1  Potassium Schoenite (Mahalaabh-1 kg)     100.0           KG
+2025-09-04 10:41:36 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:41:51 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:41:56 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name  Invoice Value Plant Code                            Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1          Agrocel’s Neemaction 1 Litre       0.0            L
+1   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00       CAP1          Agrocel’s Neemaction 1 Litre      48.0            L
+2   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00       CAP1           Agrocel's Neemaction 500 ML       0.0            L
+3   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00       CAP1           Agrocel's Neemaction 500 ML      50.0            L
+4   2025-08-05                 P.A.C.S MIDJIL        8130.15       CAP1  Potassium Schoenite (Mahalaabh-1 kg)     100.0           KG
+2025-09-04 10:41:56 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:46:03 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:46:12 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name  Invoice Value Plant Code  Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR        5512.96       CGJ1    Dripsafe      75.0           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.10       CGJ1    Dripsafe     150.0           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.50       CGJ1  Herbovita       10.0           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.30       CGJ1  Herbovita       10.0           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR        1995.38       CGJ1    Mahakite      50.0          Nos
+2025-09-04 10:46:12 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:58:00 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:58:03 | test_Clean_data | INFO | Number of Rows       Billing Date             Sold-To-Party Name  Invoice Value  ...                            Mat. Desc. Inv Qty.  Inv Qty UOM.
+58820   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...          Agrocel’s Neemaction 1 Litre      0.0             L
+58821   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00  ...          Agrocel’s Neemaction 1 Litre     48.0             L
+58822   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...           Agrocel's Neemaction 500 ML      0.0             L
+58823   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00  ...           Agrocel's Neemaction 500 ML     50.0             L
+58824   2025-08-05                 P.A.C.S MIDJIL        8130.15  ...  Potassium Schoenite (Mahalaabh-1 kg)    100.0            KG
+
+[5 rows x 7 columns]
+2025-09-04 10:58:03 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 10:58:22 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 10:58:25 | test_Clean_data | INFO | Number of Rows      Billing Date             Sold-To-Party Name  Invoice Value  ...                            Mat. Desc. Inv Qty.  Inv Qty UOM.
+4093   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...          Agrocel’s Neemaction 1 Litre      0.0             L
+4094   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00  ...          Agrocel’s Neemaction 1 Litre     48.0             L
+4095   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...           Agrocel's Neemaction 500 ML      0.0             L
+4096   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00  ...           Agrocel's Neemaction 500 ML     50.0             L
+4097   2025-08-05                 P.A.C.S MIDJIL        8130.15  ...  Potassium Schoenite (Mahalaabh-1 kg)    100.0            KG
+
+[5 rows x 7 columns]
+2025-09-04 10:58:25 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 11:08:17 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 11:08:21 | test_Clean_data | INFO | Number of Rows      Billing Date             Sold-To-Party Name  Invoice Value  ...                            Mat. Desc. Inv Qty.  Inv Qty UOM.
+4093   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...          Agrocel’s Neemaction 1 Litre      0.0             L
+4094   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00  ...          Agrocel’s Neemaction 1 Litre     48.0             L
+4095   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...           Agrocel's Neemaction 500 ML      0.0             L
+4096   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00  ...           Agrocel's Neemaction 500 ML     50.0             L
+4097   2025-08-05                 P.A.C.S MIDJIL        8130.15  ...  Potassium Schoenite (Mahalaabh-1 kg)    100.0            KG
+
+[5 rows x 7 columns]
+2025-09-04 11:08:21 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 11:11:12 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 11:11:15 | test_Clean_data | INFO | Number of Rows      Billing Date             Sold-To-Party Name  Invoice Value  ...                            Mat. Desc. Inv Qty.  Inv Qty UOM.
+4093   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...          Agrocel’s Neemaction 1 Litre      0.0             L
+4094   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00  ...          Agrocel’s Neemaction 1 Litre     48.0             L
+4095   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...           Agrocel's Neemaction 500 ML      0.0             L
+4096   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00  ...           Agrocel's Neemaction 500 ML     50.0             L
+4097   2025-08-05                 P.A.C.S MIDJIL        8130.15  ...  Potassium Schoenite (Mahalaabh-1 kg)    100.0            KG
+
+[5 rows x 7 columns]
+2025-09-04 11:11:15 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 11:14:01 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 11:14:05 | test_Clean_data | INFO | Number of Rows      Billing Date             Sold-To-Party Name  Invoice Value  ...                            Mat. Desc. Inv Qty.  Inv Qty UOM.
+4093   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...          Agrocel’s Neemaction 1 Litre      0.0             L
+4094   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       16632.00  ...          Agrocel’s Neemaction 1 Litre     48.0             L
+4095   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR           0.00  ...           Agrocel's Neemaction 500 ML      0.0             L
+4096   2025-08-05  KISAN AGRI CLINIC - ANANTAPUR       18900.00  ...           Agrocel's Neemaction 500 ML     50.0             L
+4097   2025-08-05                 P.A.C.S MIDJIL        8130.15  ...  Potassium Schoenite (Mahalaabh-1 kg)    100.0            KG
+
+[5 rows x 7 columns]
+2025-09-04 11:14:05 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 11:32:35 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 11:32:47 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name  Invoice Value Plant Code  Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR        5512.96       CGJ1    Dripsafe      75.0           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.10       CGJ1    Dripsafe     150.0           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.50       CGJ1  Herbovita       10.0           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.30       CGJ1  Herbovita       10.0           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR        1995.38       CGJ1    Mahakite      50.0          Nos
+2025-09-04 11:32:47 | test_Clean_data | INFO | Loading Clean Data
+
+2025-09-04 11:34:46 | test_Clean_data | INFO | Loading Raw data
+
+2025-09-04 11:34:57 | test_Clean_data | INFO | Number of Rows   Billing Date             Sold-To-Party Name  Invoice Value Plant Code  Mat. Desc.  Inv Qty. Inv Qty UOM.
+0   2021-04-03  ADARASHAGRO CHEMICALS-JETAPUR        5512.96       CGJ1    Dripsafe      75.0           MT
+1   2021-04-03     PATEL AGRO CENTRE-PALANPUR       11027.10       CGJ1    Dripsafe     150.0           MT
+2   2021-04-03        UMIYA TRADERS -VANTHALI        4672.50       CGJ1  Herbovita       10.0           KL
+3   2021-04-03            RONAK SEEDS-PALNPUR        5046.30       CGJ1  Herbovita       10.0           KL
+4   2021-04-03     PATEL AGRO CENTRE-PALANPUR        1995.38       CGJ1    Mahakite      50.0          Nos
+2025-09-04 11:34:57 | test_Clean_data | INFO | Loading Clean Data
+

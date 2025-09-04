@@ -14,8 +14,8 @@ from Source.Models.train_prophet import train_model_prophet
 
 
 # This 
-data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-20-25(Jan-June).csv"
-data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-July.xlsx'
+data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\data_load_raw_data.csv"
+data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-Aug.xlsx'
 
 
 # For Configuration of file

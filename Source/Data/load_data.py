@@ -65,6 +65,8 @@ def load_raw_data(Existing,new):
 
     try:
         logger.info("Formating Column in order in both df\n")
+        logger.info(f"head of existing data {data_existing.head()}")
+        logger.info(f"Info of existing data {data_existing.info()}")
         required_columns = [
             'Billing Date', 'Sold-To-Party Name', 'Invoice Value', 'Plant Code',
             'Mat. Desc.','Inv Qty.','Inv Qty UOM.']
@@ -75,8 +77,8 @@ def load_raw_data(Existing,new):
 
 
         # ----------------------------Datetime Foramt for Both DFs-----------------------------------------#
-        data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'],format = '%d-%m-%Y', errors='coerce')
-        data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], format = '%d-%m-%Y', errors='coerce')
+        data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'], errors='coerce',dayfirst= True)
+        data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], errors='coerce', dayfirst = True)
         # data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
         # data_new['Billing Date'] = data_new['Billing Date'].dt.date
 
@@ -84,14 +86,14 @@ def load_raw_data(Existing,new):
         #----------------------------Combining Both Data---------------------------------------------------#
 
         logger.info("Staring Concating two df's........")
-        logger.info(f"Before Concat:{data_new.shape}.{data_existing.shape}")
+        logger.info(f"Before Concat:{data_new.shape},{data_existing.shape}")
         data_25 = pd.concat([data_existing, data_new], ignore_index=True)
         logger.info("successfully Concated df's\n")
 
         initial = data_25.shape[0]
-        final = data_25.shape[0]
         logger.info(f'Number of row in data:{initial}\n')
         data_25 = data_25.dropna(subset = ['Billing Date'])
+        final = data_25.shape[0]
         logger.info(f'Number of rows Affected {final-initial}\n')
         missing = [col for col in required_columns if col not in data_25.columns]
 
