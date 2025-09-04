@@ -13,8 +13,8 @@ from Source.Models.train_prophet import train_model_prophet
 from Source.Evalution.evalution import interactive_evalution
 
 
-data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Processed\data-25-Aug.csv"
-data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-July.xlsx'
+data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv"
+data_new = r'Z:\Supply-Chain_management(SCM)\Data\Processed\data-25-Aug.csv'
 
 
 with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:

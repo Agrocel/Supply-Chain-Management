@@ -1835,3 +1835,923 @@
 2025-09-02 16:42:52 | SCM-Data-Clean | INFO | Creating CSV for data.......
 2025-09-02 16:42:53 | SCM-Data-Clean | INFO | Successfully created CSV files.
 
+2025-09-03 10:54:05 | SCM-Data-Clean | ERROR | Error occured while mapping product :'Mat. desc.'
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-03 10:54:05 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Number of rows where district is not found:10107
+2025-09-03 10:54:06 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....
+2025-09-03 10:54:06 | SCM-Data-Clean | ERROR | Error occured while Filtering Mahalaabh:'Product'
+2025-09-03 16:08:39 | SCM-Data-Clean | ERROR | Error occured while mapping product :'Mat. desc.'
+2025-09-03 16:08:39 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-03 16:08:39 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Number of rows where district is not found:10107
+2025-09-03 16:08:40 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....
+2025-09-03 16:08:40 | SCM-Data-Clean | ERROR | Error occured while Filtering Mahalaabh:'Product'
+Traceback (most recent call last):
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 230, in Clean_raw_data
+    data = data[data['Product'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
+                ~~~~^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Product'
+2025-09-04 09:55:43 | SCM-Data-Clean | ERROR | Error occured while mapping product :'Mat. desc.'
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 09:55:43 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Number of rows where district is not found:8908
+2025-09-04 09:55:44 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....
+2025-09-04 09:55:44 | SCM-Data-Clean | ERROR | Error occured while Filtering Mahalaabh:'Mat. de'
+Traceback (most recent call last):
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Mat. de'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 230, in Clean_raw_data
+    data = data[data['Mat. de'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
+                ~~~~^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Mat. de'
+2025-09-04 10:00:10 | SCM-Data-Clean | ERROR | Error occured while mapping product :'Mat. desc.'
+2025-09-04 10:00:10 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:00:10 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Number of rows where district is not found:8908
+2025-09-04 10:00:11 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....
+2025-09-04 10:00:11 | SCM-Data-Clean | ERROR | Error occured while Filtering Mahalaabh:'Product'
+Traceback (most recent call last):
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 230, in Clean_raw_data
+    data = data[data['Product'].isin(['Mahalaabh Gr.', 'Mahalaabh'])].copy()
+                ~~~~^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Product'
+2025-09-04 10:04:07 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:04:07 | SCM-Data-Clean | ERROR | Error occured while mapping product :'Mat. desc.'
+Traceback (most recent call last):
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Mat. desc.'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 66, in Clean_raw_data
+    data = data[~data['Mat. desc.'].isin(['Potassium Schoenite (Boost-1kg )','Potassium Schoenite(Potassium Schoenite)'])]
+                 ~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Mat. desc.'
+2025-09-04 10:05:44 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:05:44 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:05:45 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:05:46 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:05:47 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:05:47 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:05:47 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:05:47 | SCM-Data-Clean | ERROR | Error occured while creating monthly data:'DataFrame' object has no attribute 'to_numeric'
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:09:47 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:09:48 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:09:49 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:09:50 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:16:19 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:16:19 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:16:20 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:29:55 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:29:56 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:29:56 | SCM-Data-Clean | ERROR | Error occurred while writing CSV files: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 307, in Clean_raw_data
+    data_GJ.to_csv(config[r"data_GJ"], index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:30:20 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:30:21 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:38:27 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:38:27 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:38:28 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:38:28 | SCM-Data-Clean | ERROR | Error occurred while writing CSV files: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 307, in Clean_raw_data
+    data_GJ.to_csv(config[r"data_GJ"], index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+2025-09-04 10:38:51 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:38:51 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:38:52 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:38:53 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Number of rows removed: 2826
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Number of rows where district is not found:1578
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(5951, 15)
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Number of rows after filtering:(3927, 15)
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:41:36 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:41:36 | SCM-Data-Clean | ERROR | Error occurred while writing CSV files: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 307, in Clean_raw_data
+    data_GJ.to_csv(config[r"data_GJ"], index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Number of rows removed: 2826
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Number of rows where district is not found:1578
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(5951, 15)
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Number of rows after filtering:(3927, 15)
+
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:41:56 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:41:57 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:41:57 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:41:57 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:41:57 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:41:57 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:46:12 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:46:13 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Number of rows removed: 1281
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Number of rows where district is not found:688
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(2806, 15)
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Number of rows after filtering:(1923, 15)
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:58:03 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:58:03 | SCM-Data-Clean | ERROR | Error occurred while writing CSV files: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 307, in Clean_raw_data
+    data_GJ.to_csv(config[r"data_GJ"], index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Number of rows removed: 1281
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Number of rows where district is not found:688
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(2806, 15)
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Number of rows after filtering:(1923, 15)
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 10:58:25 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 10:58:26 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Number of rows removed: 1281
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Number of rows where district is not found:688
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(2806, 15)
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Number of rows after filtering:(1923, 15)
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 11:08:21 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 11:08:22 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 11:11:15 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 11:11:15 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Number of rows removed: 1281
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Number of rows where district is not found:688
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(2806, 15)
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Number of rows after filtering:(1923, 15)
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 11:11:16 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Number of rows removed: 1281
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Number of rows where district is not found:688
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(2806, 15)
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Number of rows after filtering:(1923, 15)
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 11:14:05 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 11:14:06 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 11:32:47 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 11:32:47 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Number of rows removed: 4944
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Number of rows where district is not found:7563
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(53866, 15)
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Number of rows after filtering:(33083, 15)
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 11:32:48 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 11:32:49 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 11:34:57 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 11:34:57 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 11:34:58 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 11:34:58 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 11:34:58 | SCM-Data-Clean | INFO | Number of rows removed: 6225
+
+2025-09-04 11:34:58 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 11:34:58 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Number of rows where district is not found:8251
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(56672, 15)
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Number of rows after filtering:(35006, 15)
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 11:34:59 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-04 14:13:14 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-04 14:13:14 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-04 14:13:15 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-04 14:13:15 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-04 14:13:15 | SCM-Data-Clean | INFO | Number of rows removed: 10905
+
+2025-09-04 14:13:15 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-04 14:13:15 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-04 14:13:16 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-04 14:13:16 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-04 14:13:16 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-04 14:13:16 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Number of rows where district is not found:15722
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(110199, 15)
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Number of rows after filtering:(68008, 15)
+
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
