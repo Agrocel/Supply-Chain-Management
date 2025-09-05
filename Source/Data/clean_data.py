@@ -10,7 +10,7 @@ from Source.Utils.helpers import load_data
 from Logging.logger import get_logger
 import json
 from datetime import datetime 
-# This is jira change for bug
+# This is jira change for bug for again this is jira
 
 # ----------------------------Config File------------------------------#
 with open(r'Z:\\Supply-Chain_management(SCM)\\Source\\config.json',"r") as f:
