@@ -6,7 +6,6 @@ scikit-learn
 scipy
 requests
 scikit-image
-prophet
 plotly
 pandas
 numpy
@@ -22,4 +21,6 @@ pydantic
 pylit
 # Optional: prophet (install if you want Prophet)
 # prophet
-
+sqlalchemy 
+pymysql
+openpyxl
