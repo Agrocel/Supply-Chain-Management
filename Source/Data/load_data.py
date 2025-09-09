@@ -9,6 +9,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from Logging.logger import get_logger
 from Source.Utils.helpers import load_data
 import json
+from sqlalchemy import create_engine
+from datetime import datetime
+
 
 
 # ----------------------------Configuration of files--------------------------------------
@@ -21,7 +24,7 @@ logger = get_logger("Load_data_set_files")
 
 
 
-def load_raw_data(Existing,new):
+def load_raw_data():
     """
     Loads and concatenates two raw Excel datasets, ensuring consistent column formatting.
 
@@ -57,53 +60,60 @@ def load_raw_data(Existing,new):
 
 
     #-------------------- Load Existing and raw data--------------------#
+    logger.info("Lodaing Data from database ...........\n")
+    engine = create_engine(f"mysql+pymysql://{config['username']}@{config['host']}/{config['database']}")
+    df = pd.read_sql("SELECT * FROM raw_data",con=engine)
+    logger.info("raw_data loaded from database\n")
 
-    logger.info("Loading Dataset.........")
-    data_existing= load_data(Existing)
-    data_new = load_data(new)
-    logger.info("Dataset completly loaded \n")
+
+    # logger.info("Loading Dataset.........")
+    # data_existing= load_data(Existing)
+    # data_new = load_data(new)
+    # logger.info("Dataset completly loaded \n")
 
     try:
-        logger.info("Formating Column in order in both df\n")
-        logger.info(f"head of existing data {data_existing.head()}")
-        logger.info(f"Info of existing data {data_existing.info()}")
+        # logger.info("Formating Column in order in both df\n")
+        # logger.info(f"head of existing data {data_existing.head()}")
+        # logger.info(f"Info of existing data {data_existing.info()}")
+        logger.info(f"Head of raw_data{df.head()}")
         required_columns = [
-            'Billing Date', 'Sold-To-Party Name', 'Invoice Value', 'Plant Code',
-            'Mat. Desc.','Inv Qty.','Inv Qty UOM.']
+            'Billing_Date', 'Sold_To_Party_Name', 'Invoice_Value', 'Plant_Code',
+            'Mat_Desc','Inv_Qty','Inv_Qty_UOM']
 
-
-        data_existing = data_existing[required_columns]
-        data_new = data_new[required_columns]
+        df = df[required_columns]
+        # data_existing = data_existing[required_columns]
+        # data_new = data_new[required_columns]
 
 
         # ----------------------------Datetime Foramt for Both DFs-----------------------------------------#
-        data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'], errors='coerce',dayfirst= True)
-        data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], errors='coerce', dayfirst = True)
+        # data_existing['Billing Date'] = pd.to_datetime(data_existing['Billing Date'], errors='coerce',dayfirst= True)
+        # data_new['Billing Date'] = pd.to_datetime(data_new['Billing Date'], errors='coerce', dayfirst = True)
         # data_existing['Billing Date'] = data_existing['Billing Date'].dt.date
         # data_new['Billing Date'] = data_new['Billing Date'].dt.date
+        df['Billing_Date'] = pd.to_datetime(df['Billing_Date'], errors='coerce', dayfirst = True)
 
 
         #----------------------------Combining Both Data---------------------------------------------------#
 
-        logger.info("Staring Concating two df's........")
-        logger.info(f"Before Concat:{data_new.shape},{data_existing.shape}")
-        data_25 = pd.concat([data_existing, data_new], ignore_index=True)
-        logger.info("successfully Concated df's\n")
+        # logger.info("Staring Concating two df's........")
+        # logger.info(f"Before Concat:{data_new.shape},{data_existing.shape}")
+        # data_25 = pd.concat([data_existing, data_new], ignore_index=True)
+        # logger.info("successfully Concated df's\n")
 
-        initial = data_25.shape[0]
+        initial = df.shape[0]
         logger.info(f'Number of row in data:{initial}\n')
-        data_25 = data_25.dropna(subset = ['Billing Date'])
-        final = data_25.shape[0]
+        data_25 = df.dropna(subset = ['Billing_Date'])
+        final = df.shape[0]
         logger.info(f'Number of rows Affected {final-initial}\n')
-        missing = [col for col in required_columns if col not in data_25.columns]
+        missing = [col for col in required_columns if col not in df.columns]
 
         if missing:
             logger.warning(f"Missing columns in the dataset: {missing}")
             raise ValueError(f'Missing required columns :{missing}')
         else:
-            data_25 = data_25[required_columns]
+            df = df[required_columns]
         logger.info("Columns are already Present in the Data.\n")
-        logger.info(f"Load Data Set Completed\n{data_25.shape}")
+        logger.info(f"Load Data Set Completed\n{df.shape}")
         
 
         #-----------------------------------------Saving File----------------------------------------------#

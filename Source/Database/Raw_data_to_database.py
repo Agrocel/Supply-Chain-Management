@@ -48,7 +48,7 @@ for file in files:
     # DUMP to DATABASE
 
     try:
-        df.head(0).to_sql(name=table_name , con=engine, if_exists='append', index=False)
+        df.head(0).to_sql(name=table_name , con=engine, if_exists='append', index=False)   
         df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
         print(f"IMported {file} successfully")
     except Exception as e:

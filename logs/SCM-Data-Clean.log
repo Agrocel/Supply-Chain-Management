@@ -2755,3 +2755,201 @@ PermissionError: [Errno 13] Permission denied: 'Data\\Processed\\data_GJ_25.csv'
 2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Creating CSV for data.......
 2025-09-04 14:13:17 | SCM-Data-Clean | INFO | Successfully created CSV files.
 
+2025-09-09 11:24:40 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-09 11:24:40 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Number of rows removed: 6225
+
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-09 11:24:41 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Number of rows where district is not found:8251
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(56672, 15)
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Number of rows after filtering:(35006, 15)
+
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-09 11:24:42 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-09 11:24:42 | SCM-Data-Clean | ERROR | Error occured while creating monthly data:"Column(s) ['Invoice Value'] do not exist"
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 264, in Clean_raw_data
+    data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        'Product': 'first',
+        ^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        'Year': 'first',
+        ^^^^^^^^^^^^^^^^
+    }).reset_index()
+    ^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\groupby\generic.py", line 1432, in aggregate
+    result = op.agg()
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\apply.py", line 190, in agg
+    return self.agg_dict_like()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\apply.py", line 423, in agg_dict_like
+    return self.agg_or_apply_dict_like(op_name="agg")
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\apply.py", line 1608, in agg_or_apply_dict_like
+    result_index, result_data = self.compute_dict_like(
+                                ~~~~~~~~~~~~~~~~~~~~~~^
+        op_name, selected_obj, selection, kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\apply.py", line 462, in compute_dict_like
+    func = self.normalize_dictlike_arg(op_name, selected_obj, func)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\apply.py", line 663, in normalize_dictlike_arg
+    raise KeyError(f"Column(s) {list(cols)} do not exist")
+KeyError: "Column(s) ['Invoice Value'] do not exist"
+2025-09-09 11:29:03 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-09 11:29:03 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Number of rows removed: 6225
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Number of rows where district is not found:8251
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(56672, 15)
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Number of rows after filtering:(35006, 15)
+
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-09 11:29:04 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-09 11:29:05 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-09 11:29:05 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-09 11:29:05 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-09 11:29:05 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-09 11:29:05 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-09 11:47:42 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2025-09-09 11:47:42 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2025-09-09 11:47:42 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Number of rows removed: 6225
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Converting Billing Date to datetime format.......
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Creating Month Column......
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Creating Season Column.......
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Creating FY Column..........
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Creating State Columns.......
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Number of rows where district is not found:8251
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(56672, 15)
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Number of rows after filtering:(35006, 15)
+
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2025-09-09 11:47:43 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2025-09-09 11:47:44 | SCM-Data-Clean | INFO | Required Columns.......
+2025-09-09 11:47:44 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2025-09-09 11:47:44 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2025-09-09 11:47:44 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2025-09-09 11:47:45 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2025-09-09 11:47:45 | SCM-Data-Clean | INFO | Clean data -> clean table
+2025-09-09 11:47:47 | SCM-Data-Clean | ERROR | Error occurred while writing CSV files: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\clean_data.py", line 319, in Clean_raw_data
+    data.to_sql(name = config[r"clean_data_path"], con = engine, if_exists = 'replace', index = False)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<8 lines>...
+        method=method,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\sql.py", line 841, in to_sql
+    with pandasSQL_builder(con, schema=schema, need_transaction=True) as pandas_sql:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\sql.py", line 1645, in __exit__
+    self.exit_stack.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 627, in close
+    self.__exit__(None, None, None)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 619, in __exit__
+    raise exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 604, in __exit__
+    if cb(*exc_details):
+       ~~^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\util.py", line 147, in __exit__
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\util.py", line 145, in __exit__
+    self.commit()
+    ~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 2632, in commit
+    self._do_commit()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 2737, in _do_commit
+    self._connection_commit_impl()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 2708, in _connection_commit_impl
+    self.connection._commit_impl()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 1147, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 2358, in _handle_dbapi_exception
+    raise exc_info[1].with_traceback(exc_info[2])
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 1145, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+                                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 581, in connection
+    return self._revalidate_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 673, in _revalidate_connection
+    self._invalid_transaction()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\base.py", line 663, in _invalid_transaction
+    raise exc.PendingRollbackError(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)

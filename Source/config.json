@@ -24,5 +24,10 @@
     "Graph_Gujarat" : "Reports\\Figures\\Graph_Gujarat.html",
     "Graph_Maharashtra" : "Reports\\Figures\\Graph_Maharashtra.html",
     "Graph_Chattisgarh" : "Reports\\Figures\\Graph_Chattisgarh.html",
-    "Graph_TamilNadu" : "Reports\\Figures\\Graph_TamilNadu.html"
+    "Graph_TamilNadu" : "Reports\\Figures\\Graph_TamilNadu.html",
+    "username" : "root",
+    "password" : "",
+    "host" : "localhost",
+    "database" : "scm",
+    "clean_data_path" : "clean_data"
     }

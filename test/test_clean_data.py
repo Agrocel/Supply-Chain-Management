@@ -23,7 +23,7 @@ logger = get_logger("test_Clean_data")
 
 if __name__ == "__main__":
     logger.info("Loading Raw data\n")
-    data = load_raw_data(data_existing, data_new)
+    data = load_raw_data()
     logger.info(f"Number of Rows {data.head()}")
 
 

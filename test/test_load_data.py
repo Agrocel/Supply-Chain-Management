@@ -20,6 +20,6 @@ logger = get_logger("test_load_data")
 
 if __name__ == "__main__":
     logger.info("Loading Raw data\n")
-    data = load_raw_data(data_existing, data_new)
-    print(data['Billing Date'].dtype)
+    data = load_raw_data()
+    print(data['Billing_Date'].dtype)
     print(data.shape)
