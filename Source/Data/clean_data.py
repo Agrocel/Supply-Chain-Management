@@ -10,7 +10,12 @@ from Source.Utils.helpers import load_data
 from Logging.logger import get_logger
 import json
 from datetime import datetime 
-# This is jira change for bug for again this is jira
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from Source.Database.db_con import get_engine
+
+
+engine = get_engine()
 
 # ----------------------------Config File------------------------------#
 with open(r'Z:\\Supply-Chain_management(SCM)\\Source\\config.json',"r") as f:
@@ -63,7 +68,7 @@ def Clean_raw_data(data):
     # ---------------------PRODUCT COLUMN--------------------------------------#
     try:
         logger.info("Mapping Product Column.......")
-        data = data[~data['Mat. Desc.'].isin(['Potassium Schoenite (Boost-1kg )','Potassium Schoenite(Potassium Schoenite)'])]
+        data = data[~data['Mat_Desc'].isin(['Potassium Schoenite (Boost-1kg )','Potassium Schoenite(Potassium Schoenite)'])]
 
         product_patterns = {                            
             "Dripsafe": r"^dripsafe.*",
@@ -91,7 +96,7 @@ def Clean_raw_data(data):
         
         
         logger.info("Creating Clean Product Column.......")
-        data['Product'] = data['Mat. Desc.'].apply(map_product)
+        data['Product'] = data['Mat_Desc'].apply(map_product)
         logger.info("Sucessfully Created Product Column.\n")
 
 
@@ -117,10 +122,10 @@ def Clean_raw_data(data):
         # data.loc[: ,'Billing Date'] = data['Billing Date'].dt.date()
 
 
-        invalid_data = data['Billing Date'].isna().sum()
+        invalid_data = data['Billing_Date'].isna().sum()
         if invalid_data > 0:
             logger.warning(f"{invalid_data} invalid billing date row dropped due to conversion failure")
-            data = data.dropna(subset=['Billing Date'])
+            data = data.dropna(subset=['Billing_Date'])
 
 
         # Month Column
@@ -133,7 +138,7 @@ def Clean_raw_data(data):
         
         logger.info("Creating Month Column......")    
         data = data.copy()                                
-        data.loc[:,'Month'] = data['Billing Date'].dt.strftime("%B").map(month_mapping)
+        data.loc[:,'Month'] = data['Billing_Date'].dt.strftime("%B").map(month_mapping)
         logger.info("successfully Created Month Column.\n")
         
 
@@ -165,15 +170,15 @@ def Clean_raw_data(data):
 
         logger.info("Creating FY Column..........")
         data = data.copy() 
-        data.loc[:,'FY'] = data['Billing Date'].apply(get_financial_year)
+        data.loc[:,'FY'] = data['Billing_Date'].apply(get_financial_year)
         logger.info("Successfully Created FY Column\n")
 
         # Month and Year Column
-        data['Num_Month'] = data['Billing Date'].dt.month
-        data['Year'] = data['Billing Date'].dt.year
+        data['Num_Month'] = data['Billing_Date'].dt.month
+        data['Year'] = data['Billing_Date'].dt.year
 
         # Billing Date to Date
-        data = data.rename(columns = {"Billing Date":"Date"})
+        data = data.rename(columns = {"Billing_Date":"Date"})
 
     except Exception as e:
         logger.error(f"Error occured while Creating Season,Month or FY Columns:{e}",exc_info=True)
@@ -203,7 +208,7 @@ def Clean_raw_data(data):
 
         logger.info("Creating State Columns.......")
         data = data.copy() 
-        data.loc[:,'State'] = data['Plant Code'].map(plant_state_mapping)
+        data.loc[:,'State'] = data['Plant_Code'].map(plant_state_mapping)
         logger.info("Successfully Created State Columns\n")
 
     except Exception as e:
@@ -219,7 +224,7 @@ def Clean_raw_data(data):
         logger.info("Mapping Dealership to District Column....... ")
         Dealership_to_district = state_district_df.set_index('Dealership Name')['District'].to_dict()
         data = data.copy() 
-        data.loc[:,'District'] = data['Sold-To-Party Name'].map(Dealership_to_district)
+        data.loc[:,'District'] = data['Sold_To_Party_Name'].map(Dealership_to_district)
         logger.info(f"Number of rows where district is not found:{data['District'].isna().sum()}")
     except Exception as e:
         logger.error(f"Error occured while Creating District column:{e}", exc_info=True)
@@ -246,8 +251,8 @@ def Clean_raw_data(data):
     try:
         logger.info('Converting Kg to MT.....')
         data['UOM'] = 'MT'
-        data.loc[:, 'Inv Qty.'] = pd.to_numeric(data['Inv Qty.'], errors='coerce')
-        data.loc[:, 'QTY_MT'] = data['Inv Qty.'] / 1000
+        data.loc[:, 'Inv_Qty'] = pd.to_numeric(data['Inv_Qty'], errors='coerce')
+        data.loc[:, 'QTY_MT'] = data['Inv_Qty'] / 1000
         logger.info("Sucessfully Converted Kg to MT\n")
 
 
@@ -260,10 +265,10 @@ def Clean_raw_data(data):
     try:
         data = data.copy()
         logger.info(f"data type of all columns", data.info())
-        data.loc[:, 'Invoice Value'] = pd.to_numeric(data['Invoice Value'], errors='coerce')
+        data.loc[:, 'Invoice_Value'] = pd.to_numeric(data['Invoice_Value'], errors='coerce')
         data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({  
             'Product': 'first',
-            'Invoice Value': 'sum',
+            'Invoice_Value': 'sum',
             'QTY_MT': 'sum',
             'UOM': 'first',
             'Season': 'first',
@@ -281,7 +286,7 @@ def Clean_raw_data(data):
     try:
 
         logger.info("Required Columns.......")
-        required_col = ['Date','Product','QTY_MT','UOM','Season',"State",'FY','Month','Invoice Value','Num_Month','Year']
+        required_col = ['Date','Product','QTY_MT','UOM','Season',"State",'FY','Month','Invoice_Value','Num_Month','Year']
         missing_col = [col for col in required_col if col not in data.columns]
         if missing_col:
             logger.error(f'Missing Columns(columns are not matching):{missing_col}\n')
@@ -301,7 +306,7 @@ def Clean_raw_data(data):
     
 
 
-    # -----------------------------------Creating CSV file--------------------------------------------#
+    # -----------------------------------Creating CSV file & Database--------------------------------------------#
     try:
         logger.info("Creating CSV for data.......")
         data_GJ.to_csv(config[r"data_GJ"], index=False)
@@ -310,6 +315,10 @@ def Clean_raw_data(data):
         data_TN.to_csv(config[r"data_TN"], index=False)
         data.to_csv(config[r"data"], index=False)
         logger.info('Successfully created CSV files.\n')
+
+        logger.info("Clean data -> clean table")
+        data.to_sql(name = config[r"clean_data_path"], con = engine, if_exists = 'replace', index = False)
+        
 
     except Exception as e:
         logger.error(f"Error occurred while writing CSV files: {e}",exc_info=True)

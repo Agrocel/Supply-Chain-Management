@@ -2329,3 +2329,304 @@
 
 2025-09-04 14:13:03 | Load_data_set_files | INFO | Load Data Set Completed
 (121126, 7)
+2025-09-09 10:56:37 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 10:56:46 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 10:56:46 | Load_data_set_files | INFO | fHead of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 10:56:46 | Load_data_set_files | INFO | Info of raw_dataNone
+2025-09-09 10:56:46 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :"None of [Index(['Billing Date', 'Sold-To-Party Name', 'Invoice Value', 'Plant Code',\n       'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 84, in load_raw_data
+    df = df[required_columns]
+         ~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['Billing Date', 'Sold-To-Party Name', 'Invoice Value', 'Plant Code',\n       'Mat. Desc.', 'Inv Qty.', 'Inv Qty UOM.'],\n      dtype='object')] are in the [columns]"
+2025-09-09 11:08:27 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:13:43 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:13:48 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:13:48 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:13:48 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :'Billing Date'
+Traceback (most recent call last):
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Billing Date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 93, in load_raw_data
+    df['Billing Date'] = pd.to_datetime(df['Billing Date'], errors='coerce', dayfirst = True)
+                                        ~~^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Billing Date'
+2025-09-09 11:15:15 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:15:18 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:15:18 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:15:18 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:15:18 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:15:18 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:15:18 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:15:38 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:15:42 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:15:42 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:15:42 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:15:42 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :['Billing Date']
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 105, in load_raw_data
+    data_25 = df.dropna(subset = ['Billing Date'])
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 6670, in dropna
+    raise KeyError(np.array(subset)[check].tolist())
+KeyError: ['Billing Date']
+2025-09-09 11:16:37 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:16:41 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:16:41 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:16:41 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:16:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:16:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:16:41 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:17:21 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:17:24 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:17:24 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:17:25 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:17:25 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:17:25 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:17:25 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:23:42 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:23:46 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:23:46 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:23:46 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:23:46 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:23:46 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:23:46 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:23:46 | Load_data_set_files | ERROR | Error in Foramting the Columns in df's :[Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)\\Data\\Processed\\data_load_raw_data.csv'
+Traceback (most recent call last):
+  File "z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 120, in load_raw_data
+    data_25.to_csv(r"Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv", index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)\\Data\\Processed\\data_load_raw_data.csv'
+2025-09-09 11:24:31 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:24:34 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:24:34 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:24:34 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:24:34 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:24:34 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:24:34 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:28:52 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:28:55 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:28:55 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:28:55 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:28:55 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:28:55 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:28:55 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 11:47:30 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 11:47:33 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 11:47:33 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 11:47:33 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 11:47:33 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 11:47:33 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 11:47:33 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 16:26:24 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:34:17 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name    Mat_Desc  Inv_Qty Inv_Qty_UOM  Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR    Dripsafe     75.0          MT        5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Dripsafe    150.0          MT       11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  Herbovita      10.0          KL        4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  Herbovita      10.0          KL        5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Mahakite     50.0         Nos        1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 16:39:00 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
