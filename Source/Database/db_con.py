@@ -3,7 +3,7 @@ import numpy as np
 from sqlalchemy import create_engine
 import json
 
-
+"THIS FILE IS ENGINE OF SQL"
 
 with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
     config = json.load(f)
