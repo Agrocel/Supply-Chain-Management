@@ -122,7 +122,7 @@ def load_raw_data():
     except Exception as e:
         logger.error(f"Error in Foramting the Columns in df's :{e}",exc_info=True)
         raise ValueError(f"Error while foramting Column in df's")
-        
+    
         
     
     return data_25

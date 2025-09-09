@@ -42,7 +42,7 @@ def TamilNadu(data_TN, state):
 
 if  __name__ == "__main__":
     logger.info("Main logger Started.")
-    data = load_raw_data(data_existing, data_new)
+    data = load_raw_data()
     logger.info("data Loading Completed..")
 
     logger.info("Cleaing data...........")

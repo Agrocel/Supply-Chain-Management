@@ -2590,3 +2590,43 @@ PermissionError: [Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)
 
 2025-09-09 11:47:33 | Load_data_set_files | INFO | Load Data Set Completed
 (62913, 7)
+2025-09-09 16:26:24 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:34:17 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name    Mat_Desc  Inv_Qty Inv_Qty_UOM  Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR    Dripsafe     75.0          MT        5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Dripsafe    150.0          MT       11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  Herbovita      10.0          KL        4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  Herbovita      10.0          KL        5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Mahakite     50.0         Nos        1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 16:34:21 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
+2025-09-09 16:39:00 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Number of row in data:62913
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-09-09 16:39:04 | Load_data_set_files | INFO | Load Data Set Completed
+(62913, 7)
