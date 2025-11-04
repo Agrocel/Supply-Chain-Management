@@ -51,7 +51,7 @@ if  __name__ == "__main__":
 
     logger.info("Gujarat Started......")
     gujarat(data_GJ, 'Gujarat')
-    logger.info("Gujarat Completed ")
+    logger.info("Gujarat Completed ") 
 
     logger.info("Maharashtra Started......")
     maharashtra(data_MH, 'Maharashtra')
