@@ -78,3 +78,19 @@
 2025-12-09 15:21:25 | Prophet_Tamil Nadu | INFO | Model Saved
 2025-12-09 15:21:25 | Prophet_Tamil Nadu | INFO | Creating Report for Prophet Tamil Nadu model
 2025-12-09 15:21:25 | Prophet_Tamil Nadu | INFO | Report Generated
+2025-12-09 16:26:34 | Prophet_Tamil Nadu | INFO | Training Prophet Model for Tamil Nadu
+2025-12-09 16:26:34 | Prophet_Tamil Nadu | INFO | Fitting Data to the model......
+2025-12-09 16:26:35 | Prophet_Tamil Nadu | INFO | Model Training Complete
+
+2025-12-09 16:26:35 | Prophet_Tamil Nadu | INFO | Forecasting Test and Future Date
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Model Forecasting Complete
+
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | MAE and RMSE calculated
+
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Value of MAE for Prophet is 9.62
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Value of RMSE for Prophet is 12.53
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Saving Model
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Model Saved
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Creating Report for Prophet Tamil Nadu model
+2025-12-09 16:26:36 | Prophet_Tamil Nadu | INFO | Report Generated

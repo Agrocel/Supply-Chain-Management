@@ -141,3 +141,19 @@ NameError: name 'State' is not defined
 2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Model Saved
 2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
 2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 16:26:29 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 16:26:29 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Report Generated

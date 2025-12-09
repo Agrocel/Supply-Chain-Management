@@ -3208,3 +3208,43 @@ PermissionError: [Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)
 
 2025-12-09 15:21:05 | Load_data_set_files | INFO | Load Data Set Completed
 (72737, 7)
+2025-12-09 16:20:01 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 16:20:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 16:20:04 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 16:20:04 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 16:20:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 16:20:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 16:20:04 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 16:26:05 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 16:26:08 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 16:26:09 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 16:26:09 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 16:26:09 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 16:26:09 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 16:26:09 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
