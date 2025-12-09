@@ -259,3 +259,39 @@ PermissionError: [Errno 13] Permission denied: 'Reports\\models\\Model_Report_GJ
 2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Model Saved
 2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
 2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 16:20:12 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 16:20:12 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 16:20:14 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 16:20:14 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 16:20:14 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 16:20:14 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 16:20:14 | Prophet-Gujarat | ERROR | Error in Forecasting Test and Future Data :continuous is not supported
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_gj.py", line 58, in train_prophet_model_gj
+    accuracy = accuracy_score(prophet_gj_data['y'], prophet_GJ_data_pred['yhat'])
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py", line 359, in accuracy_score
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py", line 117, in _check_targets
+    raise ValueError("{0} is not supported".format(y_type))
+ValueError: continuous is not supported
+2025-12-09 16:26:23 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 16:26:23 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 16:26:27 | Prophet-Gujarat | INFO | Report Generated

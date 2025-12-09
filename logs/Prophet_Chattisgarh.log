@@ -154,3 +154,19 @@ PermissionError: [Errno 13] Permission denied: 'Reports\\models\\Model_Report_CG
 2025-12-09 15:21:23 | Prophet_Chattisgarh | INFO | Model Saved
 2025-12-09 15:21:23 | Prophet_Chattisgarh | INFO | Creating Report for Prophet Chhattisgarh model
 2025-12-09 15:21:23 | Prophet_Chattisgarh | INFO | Report Generated
+2025-12-09 16:26:32 | Prophet_Chattisgarh | INFO | Training Prophet Model for Chhattisgarh
+2025-12-09 16:26:32 | Prophet_Chattisgarh | INFO | Fitting Data to the model......
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Model Training Complete
+
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Forecasting Test and Future Date
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Model Forecasting Complete
+
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | MAE and RMSE calculated
+
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Value of MAE for Prophet is 5.99
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Value of RMSE for Prophet is 7.98
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Saving Model
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Model Saved
+2025-12-09 16:26:33 | Prophet_Chattisgarh | INFO | Creating Report for Prophet Chhattisgarh model
+2025-12-09 16:26:34 | Prophet_Chattisgarh | INFO | Report Generated

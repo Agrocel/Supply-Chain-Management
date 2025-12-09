@@ -4,7 +4,7 @@ import os
 import json 
 from Logging.logger import get_logger
 from prophet import Prophet
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from prophet.serialize import model_to_json
 
 Base = os.path.dirname(os.path.abspath(__file__))
@@ -48,6 +48,7 @@ def train_prophet_model_tn(data):
         logger.info("Calculating MAE and RMSE for Test.....")
         MAE = mean_absolute_error(prophet_tn_data['y'], prophet_tn_data_pred['yhat'])
         RMSE = np.sqrt(mean_squared_error(prophet_tn_data['y'], prophet_tn_data_pred['yhat']))
+        accuracy = r2_score(prophet_tn_data['y'], prophet_tn_data_pred['yhat'])
         logger.info("MAE and RMSE calculated\n")
         logger.info(f'Value of MAE for Prophet is {MAE:.2f}')
         logger.info(f'Value of RMSE for Prophet is {RMSE:.2f}')
@@ -77,7 +78,8 @@ def train_prophet_model_tn(data):
             "Date_forecast": prophet_tn_data_pred['ds'],
             "Forecast": prophet_tn_data_pred['yhat'],
             "Lower Bound": prophet_tn_data_pred['yhat_lower'],
-            "Upper Bound": prophet_tn_data_pred['yhat_upper']
+            "Upper Bound": prophet_tn_data_pred['yhat_upper'],
+            "Accuracy" : accuracy
         })
         save_model_performance.to_csv(config[f'model_forecast_TamilNadu'])
         logger.info("Report Generated")
