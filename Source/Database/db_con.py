@@ -2,10 +2,12 @@ import pandas as pd
 import numpy as np 
 from sqlalchemy import create_engine
 import json
+import os
 
 "THIS FILE IS ENGINE OF SQL"
 
-with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, '..', 'config.json'), "r") as f:
     config = json.load(f)
 
 def get_engine():

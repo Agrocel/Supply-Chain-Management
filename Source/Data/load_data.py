@@ -15,7 +15,8 @@ from datetime import datetime
 
 
 # ----------------------------Configuration of files--------------------------------------
-with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+with open(os.path.join(PROJECT_ROOT, 'Source', 'config.json'), "r") as f:
     config = json.load(f)
 
 
@@ -117,7 +118,7 @@ def load_raw_data():
         
 
         #-----------------------------------------Saving File----------------------------------------------#
-        data_25.to_csv(r"Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv", index=False)
+        data_25.to_csv(os.path.join(PROJECT_ROOT, 'Data', 'Processed', 'data_load_raw_data.csv'), index=False)
         
     except Exception as e:
         logger.error(f"Error in Foramting the Columns in df's :{e}",exc_info=True)

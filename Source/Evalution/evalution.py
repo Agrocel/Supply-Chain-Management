@@ -13,7 +13,8 @@ from plotly.subplots import make_subplots
 
 
 # For Configuration of file
-with open(r'Z:\Supply-Chain_management(SCM)\Source\config.json', "r") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, '..', 'config.json'), "r") as f:
     config = json.load(f)
 
 #Logging initiated
@@ -60,8 +61,8 @@ def interactive_evalution(data,forecast_future,prophet_data_pred,State):
     # Plot Future Forecast 
     fig.add_trace(
         go.Scatter(
-            x = forecast_future['ds'][-4:],
-            y = forecast_future['yhat'][-4:],
+            x = forecast_future['ds'][-3:],
+            y = forecast_future['yhat'][-3:],
             mode = 'lines+markers',
             name = 'Forecast',
             line = dict(color = 'orange', width = 2)
@@ -99,6 +100,3 @@ def interactive_evalution(data,forecast_future,prophet_data_pred,State):
     )
 
     fig.write_html(config[f'Graph_{State}'])
-    
-
-    

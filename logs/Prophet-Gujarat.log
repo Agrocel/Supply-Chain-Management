@@ -1,0 +1,261 @@
+2025-12-09 11:15:48 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 11:15:48 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 11:15:51 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 11:15:51 | Prophet-Gujarat | ERROR | Error in Saving Model :'prophet_model_Gujarat'
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_guj.py", line 70, in train_prophet_model_guj
+    with open(config[rf'prophet_model_{State}'],'w') as fout:
+              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'prophet_model_Gujarat'
+2025-12-09 11:18:51 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 11:18:51 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 11:18:54 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 11:22:49 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 11:22:49 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 11:22:51 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:10:44 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:10:44 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:10:46 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:10:46 | Prophet-Gujarat | ERROR | Error in Saving Model :'prophet_model_Gujarat'
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_gj.py", line 69, in train_prophet_model_gj
+    with open(config[rf'prophet_model_Gujarat'],'w') as fout:
+              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'prophet_model_Gujarat'
+2025-12-09 12:21:00 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:21:00 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:21:03 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:21:03 | Prophet-Gujarat | ERROR | Error in Saving Model & Report :[Errno 2] No such file or directory: '\\\\192.168.7.4\\Data Science\\Supply-Chain_management(SCM)\\Source\\Models\\..\\Reports\\models\\Prophet_model_GJ.json'
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_gj.py", line 69, in train_prophet_model_gj
+    with open(os.path.join(Base, "..", config['Prophet_model_Gujarat']), 'w') as fout:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '\\\\192.168.7.4\\Data Science\\Supply-Chain_management(SCM)\\Source\\Models\\..\\Reports\\models\\Prophet_model_GJ.json'
+2025-12-09 12:24:01 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:24:01 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:24:03 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:24:04 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:24:04 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:24:04 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:24:04 | Prophet-Gujarat | ERROR | Error in Saving Model & Report :array length 1 does not match index length 68
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_gj.py", line 77, in train_prophet_model_gj
+    save_model_performance = pd.DataFrame({
+        'Date' : [timestamp],
+    ...<6 lines>...
+        "Upper Bound": prophet_GJ_data_pred['yhat_upper']
+    })
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 782, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\internals\construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\internals\construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\internals\construction.py", line 690, in _extract_index
+    raise ValueError(msg)
+ValueError: array length 1 does not match index length 68
+2025-12-09 12:26:18 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:26:18 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:26:20 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 12:34:21 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:34:21 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:34:23 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:34:24 | Prophet-Gujarat | ERROR | Error in Saving Model & Report :[Errno 13] Permission denied: 'Reports\\models\\Model_Report_GJ.csv'
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_gj.py", line 88, in train_prophet_model_gj
+    save_model_performance.to_csv(config[f'model_evaluation_Gujarat'], mode = 'a', index = False, header=not pd.io.common.file_exists(config[f'model_evaluation_Gujarat']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3989, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Reports\\models\\Model_Report_GJ.csv'
+2025-12-09 12:36:06 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:36:06 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:36:08 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 12:39:50 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:39:50 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:39:52 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 12:42:01 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 12:42:01 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 12:42:02 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 12:42:03 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 12:42:03 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 12:42:03 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 15:19:56 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 15:19:56 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 15:19:59 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 15:21:17 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 15:21:17 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 15:21:19 | Prophet-Gujarat | INFO | Report Generated

@@ -20,7 +20,7 @@ matplotlib
 pydantic
 pylit
 # Optional: prophet (install if you want Prophet)
-# prophet
+prophet
 sqlalchemy 
 pymysql
 openpyxl

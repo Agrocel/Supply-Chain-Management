@@ -6,8 +6,9 @@ from datetime import datetime
 import shutil
 
 #CONFIGURATION
-folder_incoming = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Incoming"
-folder_preocessed = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Processed"
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+folder_incoming = os.path.join(BASE_DIR, 'Data', 'Raw', 'Incoming')
+folder_preocessed = os.path.join(BASE_DIR, 'Data', 'Processed')
 db_user = r'root'
 db_host = r'localhost'
 db_name = r'scm'

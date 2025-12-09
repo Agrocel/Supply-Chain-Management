@@ -2630,3 +2630,581 @@ PermissionError: [Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)
 
 2025-09-09 16:39:04 | Load_data_set_files | INFO | Load Data Set Completed
 (62913, 7)
+2025-11-04 14:38:34 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 14:38:39 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 14:38:39 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 14:38:39 | Load_data_set_files | INFO | Number of row in data:72437
+
+2025-11-04 14:38:39 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 14:38:39 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 14:38:39 | Load_data_set_files | INFO | Load Data Set Completed
+(72437, 7)
+2025-11-04 14:53:59 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 14:54:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 14:54:04 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 14:54:04 | Load_data_set_files | INFO | Number of row in data:72437
+
+2025-11-04 14:54:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 14:54:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 14:54:04 | Load_data_set_files | INFO | Load Data Set Completed
+(72437, 7)
+2025-11-04 14:58:52 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 14:58:58 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 14:58:58 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 14:58:58 | Load_data_set_files | INFO | Number of row in data:72437
+
+2025-11-04 14:58:58 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 14:58:58 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 14:58:58 | Load_data_set_files | INFO | Load Data Set Completed
+(72437, 7)
+2025-11-04 15:04:32 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 15:04:37 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 15:04:37 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 15:04:37 | Load_data_set_files | INFO | Number of row in data:72437
+
+2025-11-04 15:04:37 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 15:04:37 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 15:04:37 | Load_data_set_files | INFO | Load Data Set Completed
+(72437, 7)
+2025-11-04 15:16:51 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 15:16:56 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 15:16:56 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 15:16:56 | Load_data_set_files | INFO | Number of row in data:69545
+
+2025-11-04 15:16:56 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 15:16:56 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 15:16:56 | Load_data_set_files | INFO | Load Data Set Completed
+(69545, 7)
+2025-11-04 15:18:03 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 15:19:37 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-11-04 15:19:44 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-11-04 15:19:44 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-11-04 15:19:44 | Load_data_set_files | INFO | Number of row in data:69545
+
+2025-11-04 15:19:44 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-11-04 15:19:44 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-11-04 15:19:44 | Load_data_set_files | INFO | Load Data Set Completed
+(69545, 7)
+2025-12-02 15:46:27 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-02 15:46:31 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-02 15:46:31 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-02 15:46:31 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-02 15:46:31 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-02 15:46:31 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-02 15:46:31 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-03 14:40:00 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-03 14:40:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-03 14:40:04 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-03 14:40:04 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-03 14:40:04 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-03 14:40:04 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-03 14:40:04 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-03 14:44:54 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-03 14:44:57 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-03 14:44:57 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-03 14:44:57 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-03 14:44:57 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-03 14:44:57 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-03 14:44:57 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:15:33 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:15:35 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:15:35 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:15:36 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:15:36 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:15:36 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:15:36 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:18:39 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:18:41 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:18:41 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:18:41 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:18:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:18:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:18:41 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:22:37 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:22:39 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:22:39 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:22:39 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:22:39 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:22:39 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:22:39 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:48:09 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:48:11 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:48:11 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name    Mat_Desc  Inv_Qty Inv_Qty_UOM  Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR    Dripsafe     75.0          MT        5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Dripsafe    150.0          MT       11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  Herbovita      10.0          KL        4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  Herbovita      10.0          KL        5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Mahakite     50.0         Nos        1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2025-12-09 11:48:11 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:48:11 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:48:11 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:48:11 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:50:10 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:50:11 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:50:11 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name    Mat_Desc  Inv_Qty Inv_Qty_UOM  Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR    Dripsafe     75.0          MT        5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Dripsafe    150.0          MT       11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  Herbovita      10.0          KL        4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  Herbovita      10.0          KL        5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR    Mahakite     50.0         Nos        1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2025-12-09 11:50:11 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:50:11 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:50:11 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:50:11 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:51:38 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:51:41 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:51:41 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:51:41 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:51:41 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:51:41 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:51:41 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:52:58 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:52:59 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:52:59 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:52:59 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:52:59 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:52:59 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:52:59 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:57:53 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:57:55 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:57:55 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:57:55 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:57:55 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:57:55 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:57:55 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 11:59:30 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 11:59:31 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 11:59:31 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 11:59:31 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 11:59:31 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 11:59:31 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 11:59:31 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:09:19 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:09:21 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:09:21 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:09:21 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:09:21 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:09:21 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:09:21 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:10:33 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:10:35 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:10:35 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:10:35 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:10:35 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:10:35 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:10:35 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:20:40 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:20:44 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:20:44 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:20:44 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:20:44 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:20:44 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:20:44 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:23:45 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:23:48 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:23:48 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:23:48 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:23:48 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:23:48 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:23:48 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:26:05 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:26:08 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:26:08 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:26:08 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:26:08 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:26:08 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:26:08 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:34:09 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:34:12 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:34:12 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:34:12 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:34:12 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:34:12 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:34:12 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:35:56 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:35:58 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:35:58 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:35:58 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:35:58 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:35:58 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:35:58 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:39:41 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:39:43 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:39:43 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:39:43 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:39:43 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:39:43 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:39:43 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 12:41:50 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 12:41:52 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 12:41:52 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 12:41:52 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 12:41:52 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 12:41:52 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 12:41:52 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 15:19:44 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 15:19:46 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 15:19:46 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 15:19:46 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 15:19:47 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 15:19:47 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 15:19:47 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)
+2025-12-09 15:21:02 | Load_data_set_files | INFO | Lodaing Data from database ...........
+
+2025-12-09 15:21:04 | Load_data_set_files | INFO | raw_data loaded from database
+
+2025-12-09 15:21:05 | Load_data_set_files | INFO | Head of raw_data  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2025-12-09 15:21:05 | Load_data_set_files | INFO | Number of row in data:72737
+
+2025-12-09 15:21:05 | Load_data_set_files | INFO | Number of rows Affected 0
+
+2025-12-09 15:21:05 | Load_data_set_files | INFO | Columns are already Present in the Data.
+
+2025-12-09 15:21:05 | Load_data_set_files | INFO | Load Data Set Completed
+(72737, 7)

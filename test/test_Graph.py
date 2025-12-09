@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
 import sys 
-import os 
+import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Source.Data.load_data import load_raw_data
 from Logging.logger import get_logger
@@ -16,12 +16,13 @@ from Source.Evalution.evalution import interactive_evalution
 
 
 
-data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-20-25(Jan-June).csv"
-data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-July.xlsx'
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+data_existing = os.path.join(BASE_DIR, 'Data', 'Raw', 'Sales', 'Sales-20-25(Jan-June).csv')
+data_new = os.path.join(BASE_DIR, 'Data', 'Raw', 'Sales', 'Sales-25-July.xlsx')
 
 
 # For Configuration of file
-with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
+with open(os.path.join(BASE_DIR, 'Source', 'config.json'), "r") as f:
     config = json.load(f)
 logger = get_logger("test_Clean_data")
 

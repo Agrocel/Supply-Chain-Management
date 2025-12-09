@@ -1,0 +1,143 @@
+2025-12-09 11:48:22 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 11:48:22 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 11:48:22 | Prophet_Maharashtra | ERROR | Error in Fitting Data to the model :name 'prophet' is not defined
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_maha.py", line 31, in train_prophet_model_maha
+    model = prophet(
+            ^^^^^^^
+NameError: name 'prophet' is not defined. Did you mean: 'Prophet'?
+2025-12-09 11:50:21 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 11:50:21 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 11:50:21 | Prophet_Maharashtra | ERROR | Error in Fitting Data to the model :name 'prophet' is not defined
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_maha.py", line 31, in train_prophet_model_maha
+    model = prophet(
+            ^^^^^^^
+NameError: name 'prophet' is not defined. Did you mean: 'Prophet'?
+2025-12-09 11:51:55 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 11:51:55 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 11:51:58 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 11:51:58 | Prophet_Maharashtra | ERROR | Error in Saving Model :name 'State' is not defined
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_maha.py", line 67, in train_prophet_model_maha
+    with open(config[rf'prophet_model_{State}'],'w') as fout:
+                                       ^^^^^
+NameError: name 'State' is not defined
+2025-12-09 11:53:09 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 11:53:09 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 11:53:11 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 12:26:22 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 12:26:22 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 12:26:24 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 12:36:09 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 12:36:09 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 12:36:11 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 12:39:53 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 12:39:54 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 12:39:55 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 12:42:04 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 12:42:04 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 12:42:06 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 15:20:02 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 15:20:02 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 15:20:03 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 15:21:20 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 15:21:20 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 15:21:21 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 15:21:22 | Prophet_Maharashtra | INFO | Report Generated

@@ -18,7 +18,8 @@ from Source.Database.db_con import get_engine
 engine = get_engine()
 
 # ----------------------------Config File------------------------------#
-with open(r'Z:\\Supply-Chain_management(SCM)\\Source\\config.json',"r") as f:
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+with open(os.path.join(PROJECT_ROOT, 'Source', 'config.json'), "r") as f:
     config = json.load(f)
 
 
