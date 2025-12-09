@@ -6,7 +6,6 @@ from datetime import datetime
 import os 
 import re
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from prophet import Prophet
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error
@@ -18,7 +17,9 @@ import json
 
 
 # information from the Config file
-with open(r'Z:\Supply-Chain_management(SCM)\Source\config.json',"r") as f:
+# information from the Config file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, '..', 'config.json'), "r") as f:
     config = json.load(f)
 
 
@@ -100,7 +101,7 @@ def train_model_prophet(data,State):
     try:
         
         logger.info("Forecasting test and Future Data .........")
-        future = model.make_future_dataframe(periods=4, freq='M')
+        future = model.make_future_dataframe(periods=3, freq='MS')
         forecast_future = model.predict(future)
         prophet_data_pred = model.predict(prophet_data)
         # test_pred = model.predict(test)

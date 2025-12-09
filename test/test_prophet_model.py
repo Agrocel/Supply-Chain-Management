@@ -8,30 +8,36 @@ from Source.Data.load_data import load_raw_data
 from Logging.logger import get_logger
 import json
 from Source.Data.clean_data import Clean_raw_data
-from Source.Models.train_prophet import train_model_prophet
+from Source.Models.prophet_maha import train_prophet_model_maha
+from Source.Models.prophet_cg import train_prophet_model_cg
+from Source.Evalution.evalution import interactive_evalution
 # THis is new model okay 
 
 
 
 
-# This 
-data_existing = r"Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\data_load_raw_data.csv"
-data_new = r'Z:\Supply-Chain_management(SCM)\Data\Raw\Sales\Sales-25-Aug.xlsx'
+# Config File 
+Base_dir = os.path.dirname(os.path.abspath(__file__))
+# data_existing = os.path.join(Base_dir,"Data\Raw\Sales\data_load_raw_data.csv")
+# data_new = os.path.join(Base_dir,"Data\Raw\Sales\Sales-25-Aug.xlsx")
 
 
 # For Configuration of file
-with open('Z:\\Supply-Chain_management(SCM)\\Source\\config.json', "r") as f:
+with open(os.path.join(Base_dir,"..","Source","config.json"), "r") as f:
     config = json.load(f)
 logger = get_logger("test_Clean_data")
 
 
+
 if __name__ == "__main__":
-    logger.info("Loading Raw data\n")
-    data = load_raw_data(data_existing, data_new)
-    logger.info(f"Number of Rows {data.head()}")
+
+    data_25 = load_raw_data()
+    data_gj ,data_cg,data_mh,data_tn,data = Clean_raw_data(data_25)
+
+    prophet_cg_data,forecast_future,prophet_cg_data_pred = train_prophet_model_cg(data_cg)  
+    interactive_evalution(prophet_cg_data,forecast_future,prophet_cg_data_pred, 'Chattisgarh_test')
+    
 
 
-    logger.info("Loading Clean Data\n")
-    data_GJ, data_CG, data_MH, data_TN, data = Clean_raw_data(data)
-    prophet_data, forecast_future, prophet_data_pred =train_model_prophet(data_GJ,'Gujarat')
+
     
