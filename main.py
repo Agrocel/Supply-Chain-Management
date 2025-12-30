@@ -10,10 +10,6 @@ from Logging.logger import get_logger
 from Source.Data.load_data import load_raw_data
 from Source.Data.clean_data import Clean_raw_data
 from Source.Models.train_prophet import train_model_prophet
-from Source.Models.prophet_gj import train_prophet_model_gj
-from Source.Models.prophet_maha import train_prophet_model_maha
-from Source.Models.prophet_cg import train_prophet_model_cg
-from Source.Models.prophet_tn import train_prophet_model_tn
 from Source.Evalution.evalution import interactive_evalution
 
 
@@ -25,23 +21,58 @@ with open(os.path.join(BASE_DIR, 'Source', 'config.json'), "r") as f:
     config = json.load(f)
 logger = get_logger("Main-Logger")
 
+# Configuration for Prophet Model for each state
+# This allows for specific tuning per state if needed.
+STATE_MODEL_CONFIGS = {
+    'Gujarat': {
+        'changepoint_prior_scale': 0.1,
+        'seasonality_mode': 'multiplicative',
+        'seasonality_prior_scale': 10.0,
+        'yearly_seasonality': True,
+        'weekly_seasonality': False,
+        'daily_seasonality': False,
+        'interval_width': 0.80,
+    },
+    'Maharashtra': {
+        'changepoint_prior_scale': 0.1,
+        'seasonality_mode': 'multiplicative',
+        'seasonality_prior_scale': 10.0,
+        'yearly_seasonality': True,
+        'weekly_seasonality': False,
+        'daily_seasonality': False,
+        'interval_width': 0.80,
+    },
+    'Chattisgarh': {
+        'changepoint_prior_scale': 0.1,
+        'seasonality_mode': 'multiplicative',
+        'seasonality_prior_scale': 10.0,
+        'yearly_seasonality': True,
+        'weekly_seasonality': False,
+        'daily_seasonality': False,
+        'interval_width': 0.80,
+    },
+    'TamilNadu': {
+        'changepoint_prior_scale': 0.1,
+        'seasonality_mode': 'multiplicative',
+        'seasonality_prior_scale': 10.0,
+        'yearly_seasonality': True,
+        'weekly_seasonality': False,
+        'daily_seasonality': False,
+        'interval_width': 0.80,
+    }
+}
 
-
-def gujarat(data_GJ):
-    prophet_data, forecast_future, prophet_data_pred = train_prophet_model_gj(data_GJ)
-    interactive_evalution(prophet_data,forecast_future,prophet_data_pred, 'Gujarat')
-
-def maharashtra(data_MH):
-    prophet_data, forecast_future, prophet_data_pred =train_prophet_model_maha(data_MH)
-    interactive_evalution(prophet_data,forecast_future,prophet_data_pred, 'Maharashtra')
-
-def chattisgarh(data_CG):
-    prophet_data, forecast_future, prophet_data_pred =train_prophet_model_cg(data_CG)
-    interactive_evalution(prophet_data,forecast_future,prophet_data_pred, 'Chattisgarh')
-
-def TamilNadu(data_TN):
-    prophet_data, forecast_future, prophet_data_pred =train_prophet_model_tn(data_TN)
-    interactive_evalution(prophet_data,forecast_future,prophet_data_pred, 'TamilNadu')
+def process_state(state_name, data, model_params):
+    """
+    Train model and evaluate for a specific state.
+    """
+    logger.info(f"{state_name} Started......")
+    try:
+        prophet_data, forecast_future, prophet_data_pred = train_model_prophet(data, state_name, model_params)
+        interactive_evalution(prophet_data, forecast_future, prophet_data_pred, state_name)
+        logger.info(f"{state_name} Completed ")
+    except Exception as e:
+        logger.error(f"Error processing {state_name}: {e}", exc_info=True)
 
 
 if  __name__ == "__main__":
@@ -50,21 +81,18 @@ if  __name__ == "__main__":
     logger.info("data Loading Completed..")
 
     logger.info("Cleaing data...........")
-    data_GJ, data_CG, data_MH, data_TN, data = Clean_raw_data(data)
+    # clean_data returns: data_GJ, data_CG, data_MH, data_TN, data
+    data_GJ, data_CG, data_MH, data_TN, data_all = Clean_raw_data(data)
     logger.info("Cleanig Completed.")
     
-    logger.info("Gujarat Started......")
-    gujarat(data_GJ)
-    logger.info("Gujarat Completed ")
+    # Process Gujarat
+    process_state('Gujarat', data_GJ, STATE_MODEL_CONFIGS['Gujarat'])
 
-    logger.info("Maharashtra Started......")
-    maharashtra(data_MH)
-    logger.info("Maharashtra Completed ")
+    # Process Maharashtra
+    process_state('Maharashtra', data_MH, STATE_MODEL_CONFIGS['Maharashtra'])
 
-    logger.info("Chattisgarh Started......")
-    chattisgarh(data_CG)
-    logger.info("Chattisgarh Completed ")
+    # Process Chattisgarh
+    process_state('Chattisgarh', data_CG, STATE_MODEL_CONFIGS['Chattisgarh'])
 
-    logger.info("TamilNadu Started......")
-    TamilNadu(data_TN)
-    logger.info("TamilNadu Completed ")
+    # Process TamilNadu
+    process_state('TamilNadu', data_TN, STATE_MODEL_CONFIGS['TamilNadu'])
