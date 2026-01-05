@@ -265,7 +265,7 @@ def Clean_raw_data(data):
     # -------------------------------------------Monthly------------------------------------------------#
     try:
         data = data.copy()
-        logger.info(f"data type of all columns", data.info())
+        logger.info(f"data type of all columns:\n{data.dtypes}")
         data.loc[:, 'Invoice_Value'] = pd.to_numeric(data['Invoice_Value'], errors='coerce')
         data = data.groupby([pd.Grouper(key="Date", freq='MS'), "State"]).agg({  
             'Product': 'first',

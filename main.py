@@ -14,8 +14,7 @@ from Source.Evalution.evalution import interactive_evalution
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-data_existing = os.path.join(BASE_DIR, 'Data', 'Processed', 'data_load_raw_data.csv')
-data_new = os.path.join(BASE_DIR, 'Data', 'Processed', 'data-25-Aug.csv')
+
 
 with open(os.path.join(BASE_DIR, 'Source', 'config.json'), "r") as f:
     config = json.load(f)

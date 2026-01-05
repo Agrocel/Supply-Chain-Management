@@ -295,3 +295,67 @@ ValueError: continuous is not supported
 2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Model Saved
 2025-12-09 16:26:26 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
 2025-12-09 16:26:27 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 17:45:36 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 17:45:36 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 17:45:38 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 17:51:18 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 17:51:18 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 17:51:20 | Prophet-Gujarat | INFO | Report Generated
+2025-12-09 17:52:06 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2025-12-09 17:52:06 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Model Training Complete
+
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 33.37
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 42.22
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Saving Model
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Model Saved
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2025-12-09 17:52:08 | Prophet-Gujarat | INFO | Report Generated
+2026-01-05 10:53:28 | Prophet-Gujarat | INFO | Training Prophet Model for gujarat
+2026-01-05 10:53:28 | Prophet-Gujarat | INFO | Fitting Data to the model......
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Model Training Complete
+
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Forecasting Test and Future Data
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Model Forecasting Complete
+
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Calculating MAE and RMSE for Test.....
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | MAE and RMSE calculated
+
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Value of MAE for Prophet is 42.81
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Value of RMSE for Prophet is 58.01
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Saving Model
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Model Saved
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Creating Report for Prophet Gujaraat model
+2026-01-05 10:53:30 | Prophet-Gujarat | INFO | Report Generated
