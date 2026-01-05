@@ -30,7 +30,7 @@ for file in files:
         'Mat. Desc.','Inv Qty.','Inv Qty UOM.']
     
     try:
-        df = pd.read_excel(file_path, sheet_name=0, usecols = required_columns)
+        df = pd.read_excel(file_path, sheet_name='Sheet1', usecols = required_columns)
     except Exception as e:
         print(f"Error reading {file}: {e}")
         continue

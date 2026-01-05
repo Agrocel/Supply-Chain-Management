@@ -98,5 +98,7 @@ def interactive_evalution(data,forecast_future,prophet_data_pred,State):
         height=700
 
     )
-
-    fig.write_html(config[f'Graph_{State}'])
+    timestamp = pd.Timestamp.now().strftime("%Y-%m-%d")
+    report_dir = os.path.join(BASE_DIR, "Reports", "Figures")
+    os.makedirs(report_dir, exist_ok=True)
+    fig.write_html(os.path.join(report_dir, f"Graph_{State}_{timestamp}.html"))

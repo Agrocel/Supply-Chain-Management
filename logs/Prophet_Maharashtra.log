@@ -157,3 +157,106 @@ NameError: name 'State' is not defined
 2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Model Saved
 2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
 2025-12-09 16:26:31 | Prophet_Maharashtra | INFO | Report Generated
+2025-12-09 17:51:21 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 17:51:21 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 17:51:23 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 17:51:23 | Prophet_Maharashtra | ERROR | Error in Saving Model & Report :[Errno 13] Permission denied: 'Reports\\models\\Model_Forecast_MH.csv'
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Source\Models\prophet_maha.py", line 90, in train_prophet_model_maha
+    save_model_performance.to_csv(config[f'model_forecast_Maharashtra'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 3989, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\MU_ICT_025\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'Reports\\models\\Model_Forecast_MH.csv'
+2025-12-09 17:52:09 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2025-12-09 17:52:09 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.97
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 28.09
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Saving Model
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Model Saved
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2025-12-09 17:52:10 | Prophet_Maharashtra | INFO | Report Generated
+2026-01-05 10:53:32 | Prophet_Maharashtra | INFO | Training Prophet Model for Maharashtra
+2026-01-05 10:53:32 | Prophet_Maharashtra | INFO | Fitting Data to the model......
+2026-01-05 10:53:32 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2026-01-05 10:53:32 | Prophet_Maharashtra | INFO | Forecasting Test and Future Date
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Calculating MAE and RMSE for Test.....
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | MAE and RMSE calculated
+
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.86
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 27.96
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Saving Model
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Model Saved
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Creating Report for Prophet Maharashtra model
+2026-01-05 10:53:33 | Prophet_Maharashtra | INFO | Report Generated
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Preparing Data for Prophet (Maharashtra)....
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Fitting Data to the Model......
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Model Training Complete
+
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Forecasting test and Future Data .........
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Model Forecasting Complete
+
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Calculating MAE, RMSE and Accuracy for Test....
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | MAE, RMSE and Accuracy calculated
+
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Value of MAE for Prophet is 19.86
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Value of RMSE for Prophet is 27.96
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Value of R2 Score (Accuracy) for Prophet is 0.73
+2026-01-05 11:13:21 | Prophet_Maharashtra | INFO | Saving Model......
+2026-01-05 11:13:22 | Prophet_Maharashtra | INFO | Model Saved
+2026-01-05 11:13:22 | Prophet_Maharashtra | INFO | Creating Report for Prophet Model.....
+2026-01-05 11:13:22 | Prophet_Maharashtra | INFO | Model Report Genearated
+
+2026-01-05 11:13:22 | Prophet_Maharashtra | INFO | Saving Forecast Data to CSV File......
