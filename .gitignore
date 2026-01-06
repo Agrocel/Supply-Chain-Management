@@ -5,3 +5,7 @@
 __pycache__
 Logging/__pycache__
 Source/__pycache__
+Source/Data/__pycache__
+Source/Models/__pycache__
+Source/Evalution/__pycache__
+logs/
