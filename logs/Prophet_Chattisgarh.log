@@ -221,3 +221,19 @@ PermissionError: [Errno 13] Permission denied: 'Reports\\models\\Model_Report_CG
 2026-01-05 11:13:23 | Prophet_Chattisgarh | INFO | Model Report Genearated
 
 2026-01-05 11:13:23 | Prophet_Chattisgarh | INFO | Saving Forecast Data to CSV File......
+2026-01-06 11:06:06 | Prophet_Chattisgarh | INFO | Preparing Data for Prophet (Chattisgarh)....
+2026-01-06 11:06:06 | Prophet_Chattisgarh | INFO | Fitting Data to the Model......
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | Model Training Complete
+
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | Forecasting test and Future Data .........
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | Model Forecasting Complete
+
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | Calculating MAE, RMSE and Accuracy for Test....
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | MAE: 19.86, RMSE: 27.96, R2: 0.73
+
+2026-01-06 11:06:08 | Prophet_Chattisgarh | INFO | Saving Model......
+2026-01-06 11:06:09 | Prophet_Chattisgarh | INFO | Model Saved
+2026-01-06 11:06:09 | Prophet_Chattisgarh | INFO | Model Report Generated
+
+2026-01-06 11:06:09 | Prophet_Chattisgarh | INFO | Forecast Data Saved
+

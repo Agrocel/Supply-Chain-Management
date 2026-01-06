@@ -17,3 +17,19 @@
 2026-01-05 11:13:20 | Prophet_Gujarat | INFO | Model Report Genearated
 
 2026-01-05 11:13:20 | Prophet_Gujarat | INFO | Saving Forecast Data to CSV File......
+2026-01-06 11:05:33 | Prophet_Gujarat | INFO | Preparing Data for Prophet (Gujarat)....
+2026-01-06 11:05:33 | Prophet_Gujarat | INFO | Fitting Data to the Model......
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Model Training Complete
+
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Forecasting test and Future Data .........
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Model Forecasting Complete
+
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Calculating MAE, RMSE and Accuracy for Test....
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | MAE: 42.81, RMSE: 58.01, R2: 0.84
+
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Saving Model......
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Model Saved
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Model Report Generated
+
+2026-01-06 11:05:41 | Prophet_Gujarat | INFO | Forecast Data Saved
+
