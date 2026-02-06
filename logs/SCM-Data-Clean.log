@@ -4523,3 +4523,467 @@ dtype: object
 2026-01-06 11:05:31 | SCM-Data-Clean | INFO | Successfully created CSV files.
 
 2026-01-06 11:05:31 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-03 15:59:48 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-03 15:59:48 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Number of rows removed: 11771
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Number of rows where district is not found:11057
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(65633, 15)
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Number of rows after filtering:(41828, 15)
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-03 15:59:49 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+UOM                              str
+QTY_MT                       float64
+dtype: object
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-03 15:59:50 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-03 16:12:00 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-03 16:12:00 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Number of rows removed: 11771
+
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-03 16:12:02 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Number of rows where district is not found:11057
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(65633, 15)
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Number of rows after filtering:(41828, 15)
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+UOM                              str
+QTY_MT                       float64
+dtype: object
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-03 16:12:03 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-05 10:37:24 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 10:37:24 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 10:37:25 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 10:37:25 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 10:37:25 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 10:37:25 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 10:37:25 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 10:37:26 | SCM-Data-Clean | WARNING | Unknown UOM found: <StringArray>
+[nan]
+Length: 1, dtype: str
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 10:37:26 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+UOM                           object
+dtype: object
+2026-02-05 10:41:47 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 10:41:47 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 10:41:48 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 10:41:48 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 10:41:48 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 10:41:48 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 10:41:48 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 10:41:49 | SCM-Data-Clean | WARNING | Unknown UOM found: <StringArray>
+[nan]
+Length: 1, dtype: str
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+QTY_MT                       float64
+UOM                           object
+dtype: object
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-05 10:41:49 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-05 10:41:50 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-05 10:41:50 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-05 10:54:14 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 10:54:14 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 10:54:15 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 10:54:15 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 10:54:15 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 10:54:15 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 10:54:15 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 10:54:16 | SCM-Data-Clean | WARNING | Unknown UOM found: <StringArray>
+[nan]
+Length: 1, dtype: str
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 10:54:16 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+QTY_MT                       float64
+UOM                           object
+dtype: object
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-05 10:54:17 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-05 11:04:43 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 11:04:43 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 11:04:44 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 11:04:44 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 11:04:44 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 11:04:44 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 11:04:44 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 11:04:45 | SCM-Data-Clean | WARNING | Unknown UOM found: <StringArray>
+[nan]
+Length: 1, dtype: str
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+QTY_MT                       float64
+UOM                              str
+dtype: object
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-05 11:04:45 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-05 11:13:08 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 11:13:08 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 11:13:10 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+UOM                              str
+QTY_MT                       float64
+dtype: object
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-05 11:13:11 | SCM-Data-Clean | INFO | Clean data -> clean table
+2026-02-05 11:58:12 | SCM-Data-Clean | INFO | Mapping Product Column.......
+2026-02-05 11:58:12 | SCM-Data-Clean | INFO | Creating Clean Product Column.......
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Sucessfully Created Product Column.
+
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Dropping NA value in Product Columns.......
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Number of rows removed: 13497
+
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Cleaning Date Column.......
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Creating Month Column......
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | successfully Created Month Column.
+
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Creating Season Column.......
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Successfully Created Season column.
+
+2026-02-05 11:58:16 | SCM-Data-Clean | INFO | Creating FY Column..........
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Successfully Created FY Column
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Creating State Columns.......
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Successfully Created State Columns
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Mapping Dealership to District Column....... 
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Number of rows where district is not found:11819
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Filtering Mahalaabh and Gr. from the data.....(67902, 15)
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Number of rows after filtering:(43629, 15)
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Converting Kg to MT.....
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Sucessfully Converted Kg to MT
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Monthly Aggregation....
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | data type of all columns:
+Date                  datetime64[us]
+Sold_To_Party_Name               str
+Invoice_Value                float64
+Plant_Code                       str
+Mat_Desc                         str
+Inv_Qty                      float64
+Inv_Qty_UOM                      str
+Product                          str
+Month                            str
+Season                           str
+FY                               str
+Num_Month                      int32
+Year                           int32
+State                            str
+District                         str
+UOM                              str
+QTY_MT                       float64
+dtype: object
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Monthly Aggregation Completed
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Column Formatting....
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Required Columns.......
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Sucessfully Created MH,TN,CG,GJ varaible
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | ---- Step Completed ----
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Creating CSV for data.......
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Successfully created CSV files.
+
+2026-02-05 11:58:17 | SCM-Data-Clean | INFO | Clean data -> clean table

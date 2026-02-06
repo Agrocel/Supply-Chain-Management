@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 from datetime import datetime
 import shutil
 
+
 #CONFIGURATION
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 folder_incoming = os.path.join(BASE_DIR, 'Data', 'Raw', 'Incoming')
@@ -13,7 +14,6 @@ db_user = r'root'
 db_host = r'localhost'
 db_name = r'scm'
 table_name = r'raw_data'
-
 
 # Connect to database
 engine = create_engine(f'mysql+pymysql://{db_user}@{db_host}/{db_name}')
@@ -50,8 +50,8 @@ for file in files:
 
     try:
         df.head(0).to_sql(name=table_name , con=engine, if_exists='append', index=False)   
-        df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
-        print(f"IMported {file} successfully")
+        df.to_sql(name=table_name, con=engine, if_exists='append', index=False,method = 'multi', chunksize = 1000)
+        print(f"Imported {file} successfully")
     except Exception as e:
         print(f"Error importing {file}: {e}")
         continue

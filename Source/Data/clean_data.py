@@ -191,6 +191,7 @@ class DataCleaner:
         return df
 
     
+
     def _clean_quantity(self,df):
         self.logger.info('Converting Kg to MT.....')
         df['UOM'] = 'MT'
@@ -219,7 +220,7 @@ class DataCleaner:
         
         self.logger.info("Monthly Aggregation Completed\n")
         return df
-    
+        
     def _column_formatting(self,df):
         self.logger.info("Column Formatting....")
         self.logger.info("Required Columns.......")
@@ -249,7 +250,7 @@ class DataCleaner:
         self.logger.info('Successfully created CSV files.\n')
 
         self.logger.info("Clean data -> clean table")
-        df.to_sql(name = self.config[r"clean_data_path"], con = self.engine, if_exists = 'replace', index = False)
+        df.to_sql(name = self.config[r"clean_data_path"], con = self.engine, if_exists = 'replace', index = False, method = 'multi', chunksize = 1000)
 
     def process_all(self,raw_data):
 
@@ -302,7 +303,7 @@ class DataCleaner:
 #     """
     
 
-#     # ---------------------PRODUCT COLUMN--------------------------------------#
+# ---------------------PRODUCT COLUMN--------------------------------------#
 #     try:
 #         logger.info("Mapping Product Column.......")
 #         data = data[~data['Mat_Desc'].isin(['Potassium Schoenite (Boost-1kg )','Potassium Schoenite(Potassium Schoenite)'])]
