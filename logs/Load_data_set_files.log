@@ -3371,3 +3371,462 @@ PermissionError: [Errno 13] Permission denied: 'Z:\\Supply-Chain_management(SCM)
 
 2026-01-06 11:05:28 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
 
+2026-02-03 15:56:26 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-03 15:56:30 | Load_data_set_files | ERROR | Error fetching data from database: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "C:\Users\MU_ICT_025\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "C:\Users\MU_ICT_025\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 38, in _fetch_data
+    df = pd.read_sql("SELECT * FROM raw_data", con=self.engine)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 700, in read_sql
+    with pandasSQL_builder(con) as pandas_sql:
+         ~~~~~~~~~~~~~~~~~^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 908, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 1649, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 723, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-02-03 15:56:31 | Load_data_set_files | ERROR | Error in load_raw_data process: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "C:\Users\MU_ICT_025\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "C:\Users\MU_ICT_025\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 93, in load_raw_data
+    df = self._fetch_data()
+  File "Z:\Supply-Chain_management(SCM)\Source\Data\load_data.py", line 38, in _fetch_data
+    df = pd.read_sql("SELECT * FROM raw_data", con=self.engine)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 700, in read_sql
+    with pandasSQL_builder(con) as pandas_sql:
+         ~~~~~~~~~~~~~~~~~^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 908, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pandas\io\sql.py", line 1649, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "\\192.168.7.4\Data Science\Supply-Chain_management(SCM)\.venv\Lib\site-packages\pymysql\connections.py", line 723, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-02-03 15:59:43 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-03 15:59:45 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Processing date format...
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Number of rows in data: 77443
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-03 15:59:45 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (77443, 7)
+
+2026-02-03 15:59:47 | Load_data_set_files | INFO | Data saved successfully to Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-03 16:11:56 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-03 16:11:58 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-03 16:11:58 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-03 16:11:58 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-03 16:11:58 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-03 16:11:58 | Load_data_set_files | INFO | Processing date format...
+2026-02-03 16:11:58 | Load_data_set_files | INFO | Number of rows in data: 77443
+2026-02-03 16:11:59 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-03 16:11:59 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (77443, 7)
+
+2026-02-03 16:12:00 | Load_data_set_files | INFO | Data saved successfully to Z:\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 10:37:19 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 10:37:22 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 10:37:22 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 10:37:23 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 10:41:43 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 10:41:45 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 10:41:45 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 10:41:46 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 10:54:10 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 10:54:12 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 10:54:12 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 10:54:13 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 11:04:39 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 11:04:41 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 11:04:41 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 11:04:42 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 11:13:05 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 11:13:07 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code             Sold_To_Party_Name  ... Invoice_Value         imported_at            source_file_name
+0   2021-04-03       CGJ1  ADARASHAGRO CHEMICALS-JETAPUR  ...       5512.96 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...      11027.10 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1        UMIYA TRADERS -VANTHALI  ...       4672.50 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1            RONAK SEEDS-PALNPUR  ...       5046.30 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1     PATEL AGRO CENTRE-PALANPUR  ...       1995.38 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 11:13:07 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 11:13:08 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+
+2026-02-05 11:58:05 | Load_data_set_files | INFO | Loading Data from database ...........
+2026-02-05 11:58:10 | Load_data_set_files | INFO | raw_data loaded from database
+
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Head of raw_data:
+  Billing_Date Plant_Code  ...         imported_at            source_file_name
+0   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+1   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+2   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+3   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+4   2021-04-03       CGJ1  ... 2025-09-08 15:15:52  Sales-20-25(Jan-June).xlsx
+
+[5 rows x 9 columns]
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Validating and selecting required columns...
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Columns validated and selected.
+
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Processing date format...
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Number of rows in data: 81445
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Number of rows dropped due to invalid dates: 0
+
+2026-02-05 11:58:10 | Load_data_set_files | INFO | Load Data Set Completed. Final shape: (81445, 7)
+
+2026-02-05 11:58:11 | Load_data_set_files | INFO | Data saved successfully to \\192.168.7.4\Data Science\Supply-Chain_management(SCM)\Data\Processed\data_load_raw_data.csv
+

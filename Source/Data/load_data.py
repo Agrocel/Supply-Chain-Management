@@ -102,4 +102,3 @@ class DataLoader:
         except Exception as e:
             self.logger.error(f"Error in load_raw_data process: {e}", exc_info=True)
             raise ValueError("Error cleaning and loading raw data")
-

@@ -19,7 +19,6 @@ joblib
 matplotlib
 pydantic
 pylit
-# Optional: prophet (install if you want Prophet)
 prophet
 sqlalchemy 
 pymysql

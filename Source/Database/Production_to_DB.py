@@ -40,8 +40,8 @@ for file in files:
     df['source_file_name'] = file
 
     try:
-        df.head(0).to_sql(name=table_name , con=engine, if_exists='append', index=False)   
-        df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
+        df.head(0).to_sql(name=table_name , con=engine, if_exists='append', index=False)
+        df.to_sql(name=table_name, con=engine, if_exists='append', index=False, method = 'multi', chunksize = 1000)
         print(f"Imported {file} successfully")
     except Exception as e:
         print(f"Error importing {file}: {e}")

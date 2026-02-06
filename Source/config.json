@@ -33,5 +33,7 @@
     "password" : "",
     "host" : "localhost",
     "database" : "scm",
-    "clean_data_path" : "clean_data"
+    "clean_data_path" : "clean_data",
+    "rainfall_data_path" : "rainfall_raw",
+    "rainfall_db": "rainfall"
     }

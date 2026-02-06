@@ -14,6 +14,8 @@ from Source.Data.load_data import DataLoader
 from Source.Data.clean_data import DataCleaner
 from Source.Models.train_prophet import ProphetTrainer
 from Source.Evalution.evalution import interactive_evalution
+from Source.Utils.performance import measure_time
+
 
 class SCMPipeline:
     def __init__(self):
@@ -68,6 +70,7 @@ class SCMPipeline:
             }
         }
 
+    @measure_time("Process State")
     def process_state(self, state_name, data):
         """Train model and evaluate for a specific state."""
         self.logger.info(f"{state_name} Started......")
@@ -83,7 +86,8 @@ class SCMPipeline:
             self.logger.info(f"{state_name} Completed ")
         except Exception as e:
             self.logger.error(f"Error processing {state_name}: {e}", exc_info=True)
-
+    
+    @measure_time("Main Pipline")
     def run(self):
         """Orchestrates the entire SCM pipeline."""
         self.logger.info("Main pipeline started.")
@@ -98,7 +102,7 @@ class SCMPipeline:
         self.logger.info("Cleaning Data...")
         cleaner = DataCleaner(self.config_path)
         # clean_data returns: data_GJ, data_CG, data_MH, data_TN, data
-        data_GJ, data_CG, data_MH, data_TN, data_all = cleaner.process_all(raw_data)
+        data_GJ, data_MH ,data_CG, data_TN, data_all = cleaner.process_all(raw_data)
         self.logger.info("Cleaning Completed.")
 
         # 3. Process States
